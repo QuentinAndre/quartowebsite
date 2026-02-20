@@ -1,0 +1,13 @@
+---
+title: "Software"
+listing:
+  id: software
+  contents: "*/index.qmd"
+  type: default
+  sort: "title asc"
+  fields: [title, description]
+toc: false
+---
+
+:::{#software}
+:::

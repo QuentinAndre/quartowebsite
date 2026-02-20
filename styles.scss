@@ -1,0 +1,68 @@
+/*-- scss:defaults --*/
+
+$primary: #CFB87C;
+$navbar-bg: #565A5C;
+$navbar-fg: #FFFFFF;
+$link-color: #CFB87C;
+
+/*-- scss:rules --*/
+
+/* CU Boulder gold accent */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #CFB87C !important;
+}
+
+.navbar .navbar-brand {
+  color: #B39342 !important;
+}
+
+/* Article body styling (ported from Hugo Academic) */
+.quarto-body-content {
+  hyphens: none;
+  text-align: justify;
+}
+
+/* Footer styling */
+footer {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+/* About page styling */
+.about-entity .about-links a {
+  color: #565A5C;
+}
+
+.about-entity .about-links a:hover {
+  color: #CFB87C;
+}
+
+/* Listing cards */
+.quarto-listing .card {
+  border-left: 3px solid #CFB87C;
+}
+
+/* Button styling for software pages */
+.btn-primary {
+  background-color: #CFB87C;
+  border-color: #CFB87C;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #B39342;
+  border-color: #B39342;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  color: #CFB87C;
+  border-color: #CFB87C;
+}
+
+.btn-outline-primary:hover {
+  background-color: #CFB87C;
+  border-color: #CFB87C;
+  color: #000;
+}

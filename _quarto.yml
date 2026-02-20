@@ -1,0 +1,49 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!scripts/"
+  resources:
+    - "files/**"
+    - "images/**"
+    - "publications/**/*.pdf"
+    - "publications/**/*.html"
+    - "publications/**/featured.*"
+    - "posts/**/files/**"
+    - "posts/**/featured.*"
+    - "software/**/featured.*"
+    - "software/**/files/**"
+    - "software/**/*.js"
+
+website:
+  title: "Quentin André"
+  favicon: images/icon.png
+  google-analytics: "UA-60799896-3"
+  navbar:
+    background: "#565A5C"
+    foreground: "#FFFFFF"
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: publications/index.qmd
+      - text: Blog Posts
+        href: posts/index.qmd
+      - text: Softwares
+        href: software/index.qmd
+      - text: CV
+        href: files/vita.pdf
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    css: []
+    toc: true
+    code-overflow: wrap
+    highlight-style: obsidian
+    mainfont: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+
+execute:
+  freeze: true

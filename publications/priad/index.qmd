@@ -1,0 +1,45 @@
+---
+title: 'Pre-Registered Interim Analysis Designs (PRIADs): Increasing the Cost-Effectiveness
+  of Hypothesis Testing'
+author:
+- Quentin André
+- Nicholas S. Reinholtz
+date: '2024'
+doi: 10.1093/jcr/ucae028
+description: 'We show that group sequential designs (which allow to perform interim
+  analyses while data collection is ongoing) can unlock numerous benefits for researchers
+  engaged in confirmatory hypothesis testing: They facilitate sample size decisions,
+  allow researchers to achieve a desired level of statistical power with a smaller
+  number of observations, and help conduct more efficient pilot studies. We validate
+  this cost-saving potential through a comprehensive re-analysis of 212 studies published
+  in the Journal of Consumer Research, which shows that using these designs would
+  have reduced costs by 20% to 29%. We conclude with a discussion of limitations and
+  possible alternatives.'
+abstract: 'The difficulty of determining how many observations to collect is a source
+  of inefficiency in consumer behavior research. Group sequential designs, which allow
+  researchers to perform interim analyses while data collection is ongoing, could
+  offer a remedy. However, they are scarcely used in consumer behavior research, probably
+  owing to low awareness, perceived complexity, or concerns about the validity of
+  this approach. This article offers a tutorial on group sequential designs and introduces
+  Pre-Registered Interim Analysis Designs (PRIADs): A practical five-step procedure
+  to facilitate the adoption of these designs in marketing. We show that group sequential
+  designs can be easily adopted by marketing researchers, and introduce a companion
+  app to help researchers implement them. We demonstrate multiple benefits of PRIADs
+  for researchers engaged in confirmatory hypothesis testing: They facilitate sample
+  size decisions, allow researchers to achieve a desired level of statistical power
+  with a smaller number of observations, and help conduct more efficient pilot studies.
+  We validate this cost-saving potential through a comprehensive re-analysis of 212
+  studies published in the Journal of Consumer Research, which shows that using PRIADs
+  would have reduced participant costs by 20–29%. We conclude with a discussion of
+  limitations and possible alternatives to PRIADs.'
+categories:
+- Journal Article
+publication: Journal of Consumer Research
+publication-short: JCR
+tags:
+- statistics
+- research methods
+- hypothesis testing
+url-pdf: priad.pdf
+url-code: https://osf.io/74596/
+---

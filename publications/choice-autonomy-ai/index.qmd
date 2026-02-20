@@ -1,0 +1,49 @@
+---
+title: Consumer Choice and Autonomy in the Age of Artificial Intelligence and Big
+  Data
+author:
+- Quentin André
+- Ziv Carmon
+- Klaus Wertenbroch
+- Alia Crum
+- Douglas Frank
+- William Goldstein
+- Joe Huber
+- Leaf van Boven
+- Bernd Weber
+- Haiyang Yang
+date: '2017'
+doi: 10.1007/s40547-017-0085-8
+description: In this summary of a Choice Symposium session, we explore the opportunities
+  and challenges that the development of automation and artificial intelligence pose
+  to consumers. They can, on the one hand, contribute to consumer well-being by making
+  choices easier, more practical, and more efficient. On the other hand, they can
+  also undermine consumers' sense of autonomy, the absence of which is detrimental
+  to well-being. Drawing from diverse perspective, we explore the relevance and importance
+  of autonomy to consumers, and identify open research questions in this domain.
+abstract: 'Recent developments in the field of artificial intelligence and data analytics
+  are facilitating the automation of some consumer chores (e.g., in smart homes and
+  in self-driving cars) and allow the emergence of big-data-driven, micro-targeting
+  marketing practices (e.g., personalized content recommendation algorithms). We contend
+  that those developments can generate a tension for marketers, consumers, and policy
+  makers: They can, on the one hand, contribute to consumer well-being by making consumer
+  choices easier, more practical, and more efficient. On the other hand, they can
+  also undermine consumers’ sense of autonomy, the absence of which can be detrimental
+  to consumer well-being. Drawing on diverse perspectives from marketing, economics,
+  philosophy, neuroscience, and psychology, we explore how consumers’ sense of autonomy
+  in making choices affects their well-being. We discuss how new technologies may
+  enhance or diminish consumers’ perceptions of being in control of their choices
+  and how either of those can, in turn, enhance of detract from consumer well-being.
+  Building on this, we identify open research questions in the domain of choice, well-being,
+  and consumer welfare, and suggest avenues for future research.'
+categories:
+- Journal Article
+publication: Customer Needs and Solution
+publication-short: CNS
+tags:
+- autonomy
+- choice
+- automation
+- AI
+url-pdf: choice-autonomy-ai.pdf
+---

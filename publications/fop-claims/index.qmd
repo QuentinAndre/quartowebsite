@@ -1,0 +1,39 @@
+---
+title: Healthy through Presence or Absence, Nature or Science? A Framework for Understanding
+  Front-of-Package Food Claims
+author:
+- Quentin André
+- Pierre Chandon
+- Kelly L. Haws
+date: '2019-02-01'
+doi: 10.1177/0743915618824332
+description: 'Consumers intuitively categorize front-of-packaging claims  displayed
+  on food into 4 broad categories: (1) Claims about “removing negatives,” (2) claims
+  about “adding positives,” (3) claims about “not adding negatives,” and (4) claims
+  about “not removing positives.” Each type of claim is associated with different
+  beliefs about the healthiness, tastiness, and dieting properties of the food.'
+abstract: Food products claim to be healthy in many ways, but prior research has investigated
+  these claims at either the macro level (using broad descriptions such as “healthy”
+  or “tasty”) or the micro level (using single claims such as “low fat”). The authors
+  use a meso-level framework to examine whether these claims invoke natural or scientific
+  arguments and whether they communicate about positive attributes present in the
+  food or negative attributes absent from the food. They find that common front-of-packaging
+  claims can be appropriately classified into (1) science- and absence-focused claims
+  about “removing negatives,” (2) science- and presence-focused claims about “adding
+  positives,” (3) nature- and absence-focused claims about “not adding negatives,”
+  and (4) nature- and presence-focused claims about “not removing positives.” The
+  authors conduct validation studies using breakfast cereals, a category for which
+  nutrition quality varies but food claims are constant. They find that claim type
+  is completely uncorrelated to actual nutrition quality yet influences inferences
+  consumers make about taste, healthiness, and dieting. Claim type also helps predict
+  the effects of hedonic eating, healthy eating, or weight loss goals on food choice.
+categories:
+- Journal Article
+publication: Journal of Public Policy & Marketing
+publication-short: JPPM
+tags:
+- food
+- lay beliefs
+- categorization
+url-pdf: fop-claims.pdf
+---

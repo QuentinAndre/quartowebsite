@@ -1,0 +1,44 @@
+---
+title: Can Consumers Learn Price Dispersion? Evidence for Dispersion Spillover across
+  Categories
+author:
+- Quentin André
+- Nicholas S. Reinholtz
+- Bart de Langhe
+date: '2021'
+doi: 10.1093/jcr/ucab030
+description: 'Should I search for a cheaper flight? How much should I bid for the
+  house? To answer those questions, consumers form beliefs about the dispersion of
+  flight prices or house bids... but how accurate are those beliefs? We provide evidence
+  for a phenomenon we call dispersion spillover: Seeing more (vs. less) dispersed
+  prices in one category leads people to perceive more price dispersion in another
+  category. This dispersion spillover influences consumers’ judgments of price attractiveness
+  and changes their likelihood to search for (and find) better options.'
+abstract: 'Price knowledge is a key antecedent of many consumer judgments and decisions.
+  This paper examines consumers’ ability to form accurate beliefs about the minimum,
+  the maximum, and the overall variability of prices for multiple product categories.
+  Eight experiments provide evidence for a novel phenomenon we call dispersion spillover:
+  Consumers tend to overestimate price dispersion in a category after encountering
+  another category in which prices are more dispersed (versus equally or less dispersed).
+  Our experiments show that this dispersion spillover is consequential: It influences
+  the likelihood that consumers will search for (and find) better prices and offers,
+  and how much consumers bid in auctions. Finally, we disentangle two cognitive processes
+  that might underlie dispersion spillover. Our results suggest that judgments of
+  dispersion are not only based on specific prices stored in memory, and that dispersion
+  spillover does not simply reflect the inappropriate activation of prices from other
+  categories. Instead, it appears that consumers also form “intuitive statistics”
+  of dispersion: Summary representations that encode the dispersion of prices in the
+  environment, but that are insufficiently category-specific.'
+categories:
+- Journal Article
+publication: Journal of Consumer Research
+publication-short: JCR
+tags:
+- numerical cognition
+- learning
+- prices
+url-pdf: dispersion-spillover.pdf
+url-code: https://osf.io/hvxje/
+url-dataset: https://osf.io/hvxje/
+url-video: https://www.youtube.com/watch?v=KhqY8D-8BLM
+---

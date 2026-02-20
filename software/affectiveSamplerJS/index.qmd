@@ -1,0 +1,20 @@
+---
+title: affectiveSamplerJS
+subtitle: A Javascript library to record people's real-time affective reactions to
+  audio/video sequences.
+description: A Javascript library to record people's real-time affective reactions
+  to audio/video sequences.
+---
+
+<div class="software-links" style="margin-bottom: 1.5em;">
+<a href="https://github.com/QuentinAndre/AffectiveSamplerJS" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">See on GitHub</a>
+<a href="https://codepen.io/QuentinAndre/pen/ROrByr/" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">See on CodePen</a>
+</div>
+
+To find out how to use the library in your own research, <a href="https://github.com/QuentinAndre/AffectiveSamplerJS" target="_blank">visit the github repository.</a>
+
+
+
+
+
+

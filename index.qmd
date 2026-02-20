@@ -1,0 +1,84 @@
+---
+title: "Quentin André"
+subtitle: "Assistant Professor of Marketing"
+about:
+  id: about
+  template: trestles
+  image: images/avatar.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:quentin.andre@colorado.edu
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/andre_quentin
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=FWaxM6MAAAAJ&hl=en
+    - icon: github
+      text: GitHub
+      href: https://github.com/QuentinAndre
+    - icon: file-earmark-pdf
+      text: CV
+      href: files/vita.pdf
+listing:
+  - id: recent-publications
+    contents: publications/*/index.qmd
+    type: default
+    sort: "date desc"
+    max-items: 5
+    fields: [title, author, date, description]
+  - id: recent-posts
+    contents: posts/*/index.qmd
+    type: default
+    sort: "date desc"
+    max-items: 5
+    fields: [title, author, date, description]
+  - id: software-listing
+    contents: software/*/index.qmd
+    type: default
+    sort: "title asc"
+    fields: [title, description]
+toc: false
+---
+
+:::{#about}
+
+I am an Assistant Professor of Marketing at the [Leeds School of Business, University of Colorado Boulder](https://www.colorado.edu/business/quentin-andre).
+
+My research focuses on judgment and decision making in general, with a special interest in consumer
+financial decision-making, numerical cognition, and probabilistic reasoning. I also care about open-science, replicability, and reproducibility.
+
+On this website, I share a summary of my current projects and publications, tools and software that I have
+ programmed, and occasional thoughts and tutorials on various research-related topics.
+
+**Interests:** Financial Decision-Making, Probabilistic Reasoning, Numerical Cognition, Open Science
+
+**Education:**
+
+- PhD in Marketing — INSEAD, France (2018)
+- MSc in Managerial and Financial Economics — HEC Paris, France (2012)
+- Bachelor in History of Arts — Sorbonne University, France (2009)
+
+:::
+
+## Recent Publications
+
+:::{#recent-publications}
+:::
+
+[See all publications →](publications/)
+
+## Recent Blog Posts
+
+:::{#recent-posts}
+:::
+
+[See all blog posts →](posts/)
+
+## Software
+
+:::{#software-listing}
+:::
+
+[See all software →](software/)

@@ -1,0 +1,14 @@
+---
+title: "Publications"
+listing:
+  id: publications
+  contents: "*/index.qmd"
+  type: default
+  sort: "date desc"
+  fields: [title, author, date, description]
+  categories: true
+toc: false
+---
+
+:::{#publications}
+:::

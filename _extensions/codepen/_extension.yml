@@ -1,0 +1,6 @@
+title: CodePen Embed
+author: Quentin André
+version: 1.0.0
+contributes:
+  shortcodes:
+    - codepen.lua

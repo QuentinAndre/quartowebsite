@@ -1,0 +1,39 @@
+---
+title: Outlier Exclusion Procedures Must be Blind to the Researcher's Hypothesis
+author:
+- Quentin André
+date: '2021-02-25'
+doi: 10.1037/xge0001069
+description: 'How should researchers exclude outliers: Across the data, or within
+  conditions? In this paper, I show that when outlier exclusions are performed in
+  a way that is not ''blind'' to the researchers'' hypothesis (e.g., within conditions),
+  they increase Type I error to unacceptable levels.'
+abstract: 'When researchers choose to identify and exclude outliers from their data,
+  should they do so across all the data, or within experimental conditions? A survey
+  of recent papers published in the Journal of Experimental Psychology: General shows
+  that both methods are widely used, and common data visualization techniques suggest
+  that outliers should be excluded at the condition-level. However, I highlight in
+  the present paper that removing outliers by condition runs against the logic of
+  hypothesis testing, and that this practice leads to unacceptable increases in false-positive
+  rates. I demonstrate that this conclusion holds true across a variety of statistical
+  tests, exclusion criterion and cutoffs, sample sizes, and data types, and show in
+  simulated experiments and in a re-analysis of existing data that by-condition exclusions
+  can result in false-positive rates as high as 43%. I finally demonstrate that by-condition
+  exclusions are a specific case of a more general issue: Any outlier exclusion procedure
+  that is not blind to the hypothesis that researchers want to test may result in
+  inflated Type I errors. I conclude by offering best practices and recommendations
+  for excluding outliers.'
+categories:
+- Journal Article
+publication: 'Journal of Experimental Psychology: General'
+publication-short: 'JEP: General'
+tags:
+- research methods
+- outliers
+url-pdf: outliers-blind-hypothesis.pdf
+url-code: https://osf.io/3tz76/
+url-dataset: https://osf.io/3tz76/
+links:
+- text: Notebook
+  href: notebook.html
+---

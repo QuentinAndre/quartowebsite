@@ -1,0 +1,25 @@
+---
+title: pysprite
+subtitle: A Python Re-Implementation of the Sample Parameter Reconstruction via Iterative
+  TEchniques (SPRITE) procedure.
+description: pysprite is a Python implementation of the SPRITE procedure. The original
+  code on which this library is based was developed by James Heathers, Jordan Anaya,
+  Tim van der Zee and Nicholas JL Brown.
+title-block-banner: featured.png
+---
+
+<div class="software-links" style="margin-bottom: 1.5em;">
+<a href="https://github.com/QuentinAndre/pysprite" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">See on GitHub</a>
+<a href="https://peerj.com/preprints/26968/" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">Read Article</a>
+</div>
+
+This library implements the [SPRITE procedure](https://peerj.com/preprints/26968/) in Python. To find out how to use 
+the library, <a href="https://github.com/QuentinAndre/pysprite" target="_blank">visit the github repository.</a>
+
+The SPRITE procedure, and the original code on which this library is based, were developed by 
+[James Heathers](http://jamesheathers.com/), [Jordan Anaya](http://www.omnesres.com/), 
+[Tim van der Zee](http://www.timvanderzee.com/) and [Nicholas JL Brown](http://steamtraen.blogspot.com/).
+
+
+
+
