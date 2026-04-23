@@ -1,9 +1,17 @@
 /*-- scss:defaults --*/
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
 $primary: #CFB87C;
 $navbar-bg: #565A5C;
 $navbar-fg: #FFFFFF;
 $link-color: #CFB87C;
+
+/* Fonts */
+$font-family-sans-serif: "Red Hat Text", "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Petrona", Georgia, "Times New Roman", serif;
+$font-family-monospace: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
 
 /*-- scss:rules --*/
 
@@ -14,7 +22,10 @@ $link-color: #CFB87C;
 }
 
 .navbar .navbar-brand {
-  color: #B39342 !important;
+  color: #FFFFFF !important;
+  font-family: "Petrona", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 /* Article body styling (ported from Hugo Academic) */
@@ -23,10 +34,22 @@ $link-color: #CFB87C;
   text-align: justify;
 }
 
+/* Hide the duplicate description div rendered by Quarto below the subtitle */
+#title-block-header .description {
+  display: none;
+}
+
 /* Footer styling */
-footer {
-  margin: 0;
-  padding: 1rem 0;
+.nav-footer {
+  font-size: 0.85rem;
+}
+
+.nav-footer a {
+  color: #CFB87C !important;
+}
+
+.nav-footer a:hover {
+  color: #FFFFFF !important;
 }
 
 /* About page styling */

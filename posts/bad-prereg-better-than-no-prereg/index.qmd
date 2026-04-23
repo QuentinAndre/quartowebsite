@@ -2,8 +2,7 @@
 title: A Bad Pre-Registration is Better than No Pre-Registration
 author:
 - Quentin André
-date: 2022-07-1°
-date-modified: '2022-07-10'
+date: 2022-07-10
 description: A short blog post showing the immense benefits of pre-registration on
   false-positive rates, even when the pre-registration is underspecified.
 tags:
