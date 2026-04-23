@@ -5,7 +5,9 @@ listing:
   contents: "*/index.qmd"
   type: default
   sort: "date desc"
-  fields: [title, author, date, description]
+  max-description-length: 150
+  fields: [image, title, author, date, description, categories]
+  image-height: 120px
   categories: true
 toc: false
 ---

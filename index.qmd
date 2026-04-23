@@ -7,37 +7,43 @@ about:
   image: images/avatar.jpg
   links:
     - icon: envelope
-      text: Email
       href: mailto:quentin.andre@colorado.edu
+      aria-label: Email
     - icon: twitter
-      text: Twitter
       href: https://twitter.com/andre_quentin
+      aria-label: Twitter
     - icon: google
-      text: Google Scholar
       href: https://scholar.google.com/citations?user=FWaxM6MAAAAJ&hl=en
+      aria-label: Google Scholar
     - icon: github
-      text: GitHub
       href: https://github.com/QuentinAndre
+      aria-label: GitHub
     - icon: file-earmark-pdf
-      text: CV
       href: files/vita.pdf
+      aria-label: CV
 listing:
   - id: recent-publications
     contents: publications/*/index.qmd
     type: default
     sort: "date desc"
-    max-items: 5
-    fields: [title, author, date, description]
+    max-items: 3
+    max-description-length: 200
+    fields: [image, date, title, description]
+    image-height: 120px
   - id: recent-posts
     contents: posts/*/index.qmd
     type: default
     sort: "date desc"
-    max-items: 5
-    fields: [title, author, date, description]
-  - id: software-listing
+    max-items: 3
+    max-description-length: 150
+    fields: [image, date, title, description]
+    image-height: 120px
+  - id: recent-software
     contents: software/*/index.qmd
     type: default
-    sort: "title asc"
+    sort: false
+    max-items: 6
+    max-description-length: 120
     fields: [title, description]
 toc: false
 ---
@@ -67,18 +73,18 @@ On this website, I share a summary of my current projects and publications, tool
 :::{#recent-publications}
 :::
 
-[See all publications →](publications/)
+[See all publications →](publications/index.qmd){.btn .btn-outline-primary .btn-sm}
 
 ## Recent Blog Posts
 
 :::{#recent-posts}
 :::
 
-[See all blog posts →](posts/)
+[See all posts →](posts/index.qmd){.btn .btn-outline-primary .btn-sm}
 
 ## Software
 
-:::{#software-listing}
+:::{#recent-software}
 :::
 
-[See all software →](software/)
+[See all software →](software/index.qmd){.btn .btn-outline-primary .btn-sm}
