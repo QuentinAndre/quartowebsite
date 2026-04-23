@@ -1,4 +1,10 @@
 _site/
+_build/
+_output/
+_render/
+_dist/
+public/
+docs/
 .quarto/
 .DS_Store
 Thumbs.db
