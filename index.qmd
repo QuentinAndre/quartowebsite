@@ -58,14 +58,6 @@ financial decision-making, numerical cognition, and probabilistic reasoning. I a
 On this website, I share a summary of my current projects and publications, tools and software that I have
  programmed, and occasional thoughts and tutorials on various research-related topics.
 
-**Interests:** Financial Decision-Making, Probabilistic Reasoning, Numerical Cognition, Open Science
-
-**Education:**
-
-- PhD in Marketing — INSEAD, France (2018)
-- MSc in Managerial and Financial Economics — HEC Paris, France (2012)
-- Bachelor in History of Arts — Sorbonne University, France (2009)
-
 :::
 
 ## Recent Publications
