@@ -2,7 +2,7 @@
 title: wordSearchJS
 subtitle: A Javascript library to add Word Search Tasks to online and offline experiments.
 description: A Javascript library to add Word Search Tasks to online and offline experiments.
-title-block-banner: featured.png
+image: featured.png
 ---
 
 <div class="software-links" style="margin-bottom: 1.5em;">

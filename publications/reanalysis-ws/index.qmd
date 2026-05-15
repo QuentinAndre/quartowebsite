@@ -32,6 +32,7 @@ publication-short: 'JEP: General'
 tags:
 - loss aversion
 - error detection
+image: featured.png
 url-pdf: reanalysis-ws.pdf
 url-code: https://osf.io/67ng8/
 url-dataset: https://osf.io/67ng8/

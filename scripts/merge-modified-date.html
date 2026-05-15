@@ -1,0 +1,33 @@
+<script>
+(function () {
+  const meta = document.querySelector(".quarto-title-meta");
+  if (!meta) return;
+  const blocks = meta.querySelectorAll(":scope > div");
+  let pubHeading = null;
+  let pubDateEl = null;
+  let pubContents = null;
+  let modBlock = null;
+  let modDateText = null;
+  blocks.forEach((block) => {
+    const h = block.querySelector(".quarto-title-meta-heading");
+    if (!h) return;
+    const t = h.textContent.trim();
+    if (t === "Published") {
+      pubHeading = h;
+      pubDateEl = block.querySelector(".date");
+      pubContents = block.querySelector(".quarto-title-meta-contents");
+    } else if (t === "Modified") {
+      modBlock = block;
+      const modEl = block.querySelector(".date-modified");
+      if (modEl) modDateText = modEl.textContent.trim();
+    }
+  });
+  if (pubHeading && pubDateEl) {
+    let combined = "Published " + pubDateEl.textContent.trim();
+    if (modDateText) combined += ", last modified " + modDateText;
+    pubHeading.textContent = combined;
+    if (pubContents) pubContents.remove();
+  }
+  if (modBlock) modBlock.remove();
+})();
+</script>

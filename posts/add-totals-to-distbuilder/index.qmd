@@ -3,13 +3,9 @@ title: Adding Totals to distBuilder
 author:
 - Quentin André
 date: '2021-03-25'
-date-modified: '2021-03-26'
 description: A short tutorial on adding "totals" to distBuilder, keeping track of
   how many balls are allocated in each bucket
-tags:
-- Javascript
-- distBuilder
-- Tutorial
+categories: [Tutorials]
 toc: false
 ---
 A researcher recently emailed me to ask if there is an easy way to add "totals" to the distBuilder. This is particularly

@@ -1,17 +1,12 @@
 ---
 title: In Defense of 'Circling p-values'
-subtitle: You noticed that the p-values in a paper are close to .05. Does this make
-  you a bad person? Can 'circling p-values' ever be a useful heuristic? My two cents
-  on an (apparently?) controversial topic.
 author:
 - Quentin André
 date: '2024-04-30'
-date-modified: '2024-04-30'
 description: You noticed that the p-values in a paper are close to .05. Does this
   make you a bad person? Can 'circling p-values' ever be a useful heuristic? My two
   cents on an (apparently?) controversial topic.
-tags:
-- Tutorial
+categories: [Peer-Review]
 toc: false
 ---
 A few days ago, my Twitter feed erupted after I pointed out that [the p-values in a recent paper discussing the impact of smartphone bans on student outcomes and mental health were all close to the papers' threshold for discovery (p = .1)](https://twitter.com/andre_quentin/status/1783148596956635465). While some thanked me for pointing out this pattern, others strongly objected to my observation, and more generally to the practice of what they call 'circling p-values'. 

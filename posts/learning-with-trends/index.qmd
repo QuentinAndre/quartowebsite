@@ -1,13 +1,12 @@
 ---
 title: Can You Learn What Helps a Baby Sleep at Night?
-subtitle: How natural improvements in outcomes can lead us to form strong, yet incorrect,
-  beliefs about how the world works.
 author:
 - Quentin André
 date: '2024-02-24'
 date-modified: '2024-02-24'
 description: How natural improvements in outcomes can lead us to form strong, yet
   incorrect, beliefs about how the world works.
+categories: [Research]
 toc: false
 ---
 ## Sleeping Like a Baby
@@ -17,12 +16,13 @@ In November 2022, my wife and I welcomed our first child into our lives. It turn
 A few parents are apparently blessed with "unicorn babies" who quickly learn how to sleep through the night. Good for them. The majority of parents will learn the hard way that "sleeping like a baby" is one of the most misleading idioms of the English language. For the least fortunate of parents, baby sleep will even become a source of existential dread. The type of dread that will lead you to buy (but never read) 800-page-long treaties on baby sleep; to endlessly scroll "sleep consultant" accounts on Instagram for guidance; or to ask reddit at 2AM "why is my child waking up every two hours". 
 
 As you can guess from these suspiciously detailed examples, I was one of these parents. These late-night scrolling sessions taught me three things:
+
 1) Parents often believe they've found a "strategy" that helped their kids sleep through the night.
 2) These strategies can be very specific. I mean VERY:
 
-![png](files/Figure1.png)
+    ![](files/Figure1.png)
 
-3) These strategies rarely agree with each other: More naps! Fewer naps! Longer naps! Earlier bedtime! Later bedtime! Wean the bottle at once! Wean it gradually! Colder room! Warmer room! 
+3) These strategies rarely agree with each other: More naps! Fewer naps! Longer naps! Earlier bedtime! Later bedtime! Wean the bottle at once! Wean it gradually! Colder room! Warmer room!
 
 ## Becoming a Baby-Sleep Expert
 
@@ -30,7 +30,7 @@ Faced with such conflicting advice, we did the only reasonable thing for two par
 
 We did this for 70 days, and we quickly started noticing improvements in the quality of our kid's sleep. Check for yourself: She went from sleeping a maximum of ~4 hours in a row to ~6.5 hours! 
 
-![png](files/Figure2.png)
+![](files/Figure2.png)
 
 We were proud of ourselves: Like the other parents on reddit, we had "cracked the code" of baby sleep!
 
@@ -58,11 +58,11 @@ Bart and I created interactive cue-learning tasks, and used them to study people
 The specifics of these cue-learning tasks differ from one study to another, but the general structure is always the same:
 
 1) Participants are trying to learn, over multiple trials (called "rounds"), the relationship between a set of cues (e.g., the characteristics of investment prospects) and an outcome (the ROI of the investment).
-2) Each round, participants see a set of three prospects that differ along several attributes. In the example below, the prospects are investment opportunities, characterized by four attributes (company valuation, sector of activity, market size, and number of competitors). They are asked to choose one of these prospects. 
+2) Each round, participants see a set of three prospects that differ along several attributes. In the example below, the prospects are investment opportunities, characterized by four attributes (company valuation, sector of activity, market size, and number of competitors). They are asked to choose one of these prospects.
 
-![png](files/Figure3.png)
+    ![](files/Figure3.png)
 
-3) After choosing a prospect, they observe the outcome associated with the chosen prospect... but do not observe the outcomes associated with the foregone prospects. 
+3) After choosing a prospect, they observe the outcome associated with the chosen prospect... but do not observe the outcomes associated with the foregone prospects.
 
 This "selected learning" is a central feature of paradigm. In traditional cue-learning tasks, participants are passively 
 exposed to cue-outcome pairs. In our paradigm, participants actively choose the alternatives, and thus influence the 
@@ -74,7 +74,7 @@ is chosen by the participant in a given round, they will observe the same outcom
 between participants to increase (vs. stay constant, or decrease) over time. The participants are, of course, not aware 
 of this. Here's an example of how the outcomes were manipulated in one of our studies:
 
-![png](files/Figure4.png)
+![](files/Figure4.png)
 
 ## Testing the Model In Silico
 
@@ -99,7 +99,7 @@ absolute strength of the beliefs that the agents have formed about the cues (i.e
 actually predict the outcomes), as a function of the exogenous trend they have been exposed to (lines) and of the learning 
 strategy they have followed (panels).
 
-![png](files/Figure5.png)
+![](files/Figure5.png)
 
 Looking at the left panel first, we see a first prediction of our model come to life: Among agents relying on the positive test strategy, 
 positive exogenous trends lead to stronger beliefs that the cues predict the outcomes. These agents tested the cues they 
@@ -127,7 +127,7 @@ in the presence of positive exogenous trends. They're more confident that they u
 that they had an influence on the outcomes, that some prospects were better than others, that they understand the game better than others,
 that they have performed better than others, and that they would perform better if they re-did the task.
 
-![png](files/Figure6.png)
+![](files/Figure6.png)
 
 ### Positive Exogenous Trends Increase People's Reliance on the Positive Test Strategy
 

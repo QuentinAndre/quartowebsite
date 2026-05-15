@@ -3,8 +3,10 @@ title: "Quentin André"
 subtitle: "Assistant Professor of Marketing"
 about:
   id: about
-  template: trestles
-  image: images/avatar.jpg
+  template: solana
+  image: images/hero-1b-v2.png
+  image-width: 22em
+  image-shape: rounded
   links:
     - icon: envelope
       href: mailto:quentin.andre@colorado.edu
@@ -21,30 +23,6 @@ about:
     - icon: file-earmark-pdf
       href: files/vita.pdf
       aria-label: CV
-listing:
-  - id: recent-publications
-    contents: publications/*/index.qmd
-    type: default
-    sort: "date desc"
-    max-items: 3
-    max-description-length: 200
-    fields: [image, date, title, description]
-    image-height: 120px
-  - id: recent-posts
-    contents: posts/*/index.qmd
-    type: default
-    sort: "date desc"
-    max-items: 3
-    max-description-length: 150
-    fields: [image, date, title, description]
-    image-height: 120px
-  - id: recent-software
-    contents: software/*/index.qmd
-    type: default
-    sort: false
-    max-items: 6
-    max-description-length: 120
-    fields: [title, description]
 toc: false
 ---
 
@@ -55,28 +33,4 @@ I am an Assistant Professor of Marketing at the [Leeds School of Business, Unive
 My research focuses on judgment and decision making in general, with a special interest in consumer
 financial decision-making, numerical cognition, and probabilistic reasoning. I also care about open-science, replicability, and reproducibility.
 
-On this website, I share a summary of my current projects and publications, tools and software that I have
- programmed, and occasional thoughts and tutorials on various research-related topics.
-
 :::
-
-## Recent Publications
-
-:::{#recent-publications}
-:::
-
-[See all publications →](publications/index.qmd){.btn .btn-outline-primary .btn-sm}
-
-## Recent Blog Posts
-
-:::{#recent-posts}
-:::
-
-[See all posts →](posts/index.qmd){.btn .btn-outline-primary .btn-sm}
-
-## Software
-
-:::{#recent-software}
-:::
-
-[See all software →](software/index.qmd){.btn .btn-outline-primary .btn-sm}

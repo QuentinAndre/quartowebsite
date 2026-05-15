@@ -1,13 +1,11 @@
 ---
 title: 'Today I F-ed Up: Two Errors I Recently Made In an Almost-Published Paper'
-subtitle: Let's talk about errors in research, using myself as an example.
 author:
 - Quentin André
 date: '2024-04-10'
 date-modified: '2024-04-10'
 description: Let's talk about errors in research, using myself as an example.
-tags:
-- Tutorial
+categories: [Research]
 toc: false
 image: featured.png
 ---
@@ -59,6 +57,7 @@ Overall, I've been very lucky in many ways. First, we had friendly and helpful r
 There are versions of the world in which things would have been less pretty though. We could have discovered these mistakes much later, which would have forced us and the journal to issue a correction. The mistakes could have been more severe, and might have invalidated our results altogether. Worse, we might not have discovered them at all, and published a paper with incorrect conclusions.
 
 Looking back on these mistakes, I see three valuable lessons for myself (and maybe for other scholars who, like me, sometimes make mistakes):
+
 1) Don't assume things work in a certain way. Because of Google Scholar's superficial similarity with Google and other search engines, I assumed that it would process queries in the same way. It did not
 2) When you write code from scratch, write tests. This is what real programmers do when they write code: They use inputs for which they know what the output should be, and check that the functions they have written return the correct outputs when given these inputs. Writing tests would have allowed me to catch the numerator/denominator error.
 3) Share as much as possible about your work. These mistakes were discovered because other researchers (i) accessed our OSF repository, (ii) downloaded the list of papers we had compiled and (iii) alerted us that their paper was missing. If we hadn't posted our code and methods, or if we hadn't shared pre-prints of our work, these mistakes would have probably gone unnoticed (or would have been discovered much later).

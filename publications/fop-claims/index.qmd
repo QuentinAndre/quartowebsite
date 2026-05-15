@@ -35,5 +35,6 @@ tags:
 - food
 - lay beliefs
 - categorization
+image: featured.png
 url-pdf: fop-claims.pdf
 ---

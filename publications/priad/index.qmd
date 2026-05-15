@@ -40,6 +40,7 @@ tags:
 - statistics
 - research methods
 - hypothesis testing
+image: featured.png
 url-pdf: priad.pdf
 url-code: https://osf.io/74596/
 ---

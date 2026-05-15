@@ -7,6 +7,7 @@ $primary: #CFB87C;
 $navbar-bg: #565A5C;
 $navbar-fg: #FFFFFF;
 $link-color: #CFB87C;
+$body-bg: #fef9f0;
 
 /* Fonts */
 $font-family-sans-serif: "Red Hat Text", "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -15,17 +16,84 @@ $font-family-monospace: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberatio
 
 /*-- scss:rules --*/
 
-/* CU Boulder gold accent */
+/* Remove the underline divider Cosmo/Bootstrap adds beneath h2 headings */
+h2, .h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Show top navbar only when at the very top of the page.
+   Quarto uses Headroom.js, which by default re-pins the navbar on any
+   scroll-up. Override the pinned-while-scrolled state to stay hidden;
+   the .headroom--top class (scrollY ≈ 0) keeps the navbar visible. */
+.headroom--pinned.headroom--not-top {
+  transform: translateY(-100%) !important;
+}
+
+/* Transparent / invisible navbar */
+.navbar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.navbar .nav-link {
+  color: #565A5C !important;
+}
+
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: #CFB87C !important;
 }
 
 .navbar .navbar-brand {
-  color: #FFFFFF !important;
+  color: #565A5C !important;
   font-family: "Petrona", Georgia, serif;
   font-weight: 700;
   font-size: 1.3rem;
+}
+
+.navbar .quarto-navigation-tool {
+  color: #565A5C !important;
+}
+
+.navbar .quarto-navigation-tool:hover {
+  color: #CFB87C !important;
+}
+
+/* Bootstrap icons in the navbar (incl. the search magnifying glass)
+   don't inherit my .nav-link color, so the dark-theme default paints them
+   white. Force them dark gray, gold on hover. */
+.navbar .bi {
+  color: #565A5C !important;
+}
+
+.navbar a:hover .bi,
+.navbar button:hover .bi,
+.navbar .aria-search-expander:hover .bi,
+.navbar #quarto-search:hover .bi {
+  color: #CFB87C !important;
+}
+
+/* Algolia search SVG icons (.aa-SubmitIcon, .aa-LoadingIcon, .aa-ClearIcon).
+   SVGs use fill, not color — set both so currentColor-based and
+   hard-coded-fill paths both pick up the override. */
+.navbar [class^="aa-"],
+.navbar [class*=" aa-"],
+.navbar [class^="aa-"] svg,
+.navbar [class*=" aa-"] svg,
+.navbar [class^="aa-"] path,
+.navbar [class*=" aa-"] path {
+  color: #565A5C !important;
+  fill: #565A5C !important;
+}
+
+.navbar [class^="aa-"]:hover,
+.navbar [class*=" aa-"]:hover,
+.navbar button:hover [class^="aa-"],
+.navbar button:hover [class*=" aa-"] {
+  color: #CFB87C !important;
+  fill: #CFB87C !important;
 }
 
 /* Article body styling (ported from Hugo Academic) */
@@ -34,22 +102,139 @@ $font-family-monospace: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberatio
   text-align: justify;
 }
 
-/* Hide the duplicate description div rendered by Quarto below the subtitle */
+#title-block-header {
+  margin-block-end: 0;
+}
+
+/* ---- Blog post title block ----
+   Targeted via :has(.description) so it only applies to pages with a
+   description (e.g. blog posts), not to listing pages like /posts/.
+   DOM order from Quarto is already title → description → meta, so no
+   flex reordering is needed. */
+
+/* Title block: extra space below + a thin gold rule to separate the
+   header (title + subtitle + meta) from the post body. */
+#title-block-header:has(.description) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(207, 184, 124, 0.5);
+  margin-bottom: 2rem;
+}
+
+/* Title: prominent heading (Quarto/Bootstrap defaults are fine; we only
+   tighten the bottom margin so the description sits close beneath it). */
+#title-block-header:has(.description) .title {
+  margin-bottom: 0.25rem;
+}
+
+/* Description = subtitle: smaller and lighter beneath the title */
 #title-block-header .description {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #8A8B8C;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+#title-block-header .description p {
+  margin: 0;
+}
+
+/* Meta row: hide Author, render "Published <date>[, last modified <date>]"
+   as a single inline text run (not flex), so the modified clause flows
+   directly after the published date inside the same line. */
+#title-block-header:has(.description) .quarto-title-meta {
+  display: block;
+  font-size: 0.85rem;
+  color: #8A8B8C;
+  margin-top: 0.25rem;
+}
+
+#title-block-header:has(.description) .quarto-title-meta > div {
+  display: inline;
+}
+
+/* Hide Author meta block (all posts are mine).
+   Assumes Author is always the first meta entry, which Quarto guarantees
+   when both author and date are set in the YAML. */
+#title-block-header:has(.description) .quarto-title-meta > div:first-child {
   display: none;
 }
 
-/* Footer styling */
+#title-block-header:has(.description) .quarto-title-meta-heading {
+  font-weight: 400;
+  display: inline;
+}
+
+#title-block-header:has(.description) .quarto-title-meta-heading::after {
+  content: " ";
+}
+
+#title-block-header:has(.description) .quarto-title-meta-contents,
+#title-block-header:has(.description) .quarto-title-meta-contents p {
+  display: inline;
+  margin: 0;
+}
+
+/* If a "Modified" block exists (3rd position after hidden Author), render it
+   as ", last modified <date>" inline, suppressing the default "Modified" label. */
+#title-block-header:has(.description) .quarto-title-meta > div:nth-child(3)::before {
+  content: ", last modified ";
+}
+
+#title-block-header:has(.description) .quarto-title-meta > div:nth-child(3) .quarto-title-meta-heading {
+  display: none;
+}
+
+/* Footer styling — transparent, bottom-aligned */
 .nav-footer {
+  background-color: transparent !important;
+  border-top: none !important;
+  box-shadow: none !important;
   font-size: 0.85rem;
+  align-items: flex-end !important;
+  color: #565A5C;
+}
+
+.nav-footer .nav-footer-left,
+.nav-footer .nav-footer-center,
+.nav-footer .nav-footer-right {
+  align-self: flex-end !important;
+}
+
+/* Strip inner margins/padding so text + icons sit on the same baseline.
+   line-height: 1 puts the text glyph at the actual bottom of its box, so
+   it aligns flush with the right-side icons. */
+.nav-footer .nav-footer-left p,
+.nav-footer .nav-footer-center p {
+  margin: 0;
+  line-height: 1;
+}
+
+/* Right-align the icon row within its section */
+.nav-footer .nav-footer-right {
+  text-align: right;
+}
+
+.nav-footer .nav-footer-right .footer-items {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.nav-footer .nav-footer-right .nav-link {
+  padding: 0;
+  line-height: 1;
 }
 
 .nav-footer a {
-  color: #CFB87C !important;
+  color: #565A5C !important;
 }
 
 .nav-footer a:hover {
-  color: #FFFFFF !important;
+  color: #CFB87C !important;
 }
 
 /* About page styling — borderless horizontal icon row */
@@ -81,6 +266,144 @@ $font-family-monospace: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberatio
 /* Listing cards */
 .quarto-listing .card {
   border-left: 3px solid #CFB87C;
+}
+
+/* Category filter rendered as pill buttons above the listing */
+.quarto-listing-category-title {
+  display: none;
+}
+
+.quarto-listing-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quarto-listing-category .category {
+  display: inline-flex;
+  align-items: baseline;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid rgba(207, 184, 124, 0.5);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #565A5C;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease;
+  text-decoration: none;
+}
+
+.quarto-listing-category .category:hover {
+  background-color: rgba(207, 184, 124, 0.15);
+  border-color: #CFB87C;
+}
+
+.quarto-listing-category .category.active {
+  background-color: #CFB87C;
+  border-color: #CFB87C;
+  color: #fff;
+}
+
+.quarto-listing-category .quarto-category-count {
+  margin-left: 0.3rem;
+  opacity: 0.65;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Publications ---- */
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.pub-card {
+  border-left: 3px solid #CFB87C;
+  padding-left: 1.25rem;
+}
+
+.pub-title {
+  margin: 0 0 0.35rem 0;
+  font-family: "Petrona", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.pub-title a {
+  color: #2D2F30;
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  color: #CFB87C;
+}
+
+.pub-meta {
+  font-size: 0.85rem;
+  color: #8A8B8C;
+  margin-bottom: 0.5rem;
+}
+
+.pub-meta .pub-venue {
+  color: #565A5C;
+}
+
+.pub-desc {
+  font-size: 1rem;
+  color: #565A5C;
+  margin: 0.5rem 0 0.75rem 0;
+  line-height: 1.45;
+}
+
+/* Pill-button row, used on both the listing and the publication page */
+.pub-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.pub-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid rgba(207, 184, 124, 0.6);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #565A5C !important;
+  background-color: transparent;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.pub-btn:hover {
+  background-color: #CFB87C;
+  border-color: #CFB87C;
+  color: #fff !important;
+}
+
+.pub-btn .bi {
+  color: inherit !important;
+  font-size: 0.95em;
+}
+
+/* Inline-embedded manuscript on the publication page */
+.pub-pdf-embed {
+  width: 100%;
+  height: 800px;
+  border: 1px solid rgba(86, 90, 92, 0.2);
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  display: block;
 }
 
 /* Button styling for software pages */

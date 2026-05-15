@@ -6,8 +6,7 @@ date: '2021-07-29'
 date-modified: '2021-08-23'
 description: A primer on evaluating statistical evidence, with a focus on p-curve
   analysis.
-tags:
-- Tutorial
+categories: [Peer-Review]
 toc: true
 ---
 *In this blog post, I am sharing a slightly-modified version of a session for graduate students at CU Boulder on "Evaluating the amount of statistical evidence for a phenomenon".*
@@ -45,7 +44,7 @@ $$t = \frac{\bar{X}\_1 - \bar{X}\_2}{\sqrt{\frac{s\_{X\_1}^2+s\_{X\_2}^2}{N/2}}}
 As proof, let's simulate the distribution of t-values that we would get across a very large number of simulated "experiments" in which the null hypothesis is true (i.e., both samples are drawn from an identical population):
 
 
-![png](files/Fig1.png)
+![](files/Fig1.png)
 
 
 The theoretical distribution (in orange) closely matches the results of our simulation (in blue): What is predicted to happen when the null is true corresponds to what is actually observed.
@@ -67,7 +66,7 @@ The t-value is -1.27.
 How extreme is this difference? To answer this question, we can observe the theoretical distribution under the null, and check how often we would encounter a value at least that extreme as 1.27.
 
 
-![png](files/Fig2.png)
+![](files/Fig2.png)
 
 
 
@@ -125,7 +124,7 @@ The first p-curve we are going to cover is the p-curve under the null: The distr
 It is also the simplest p-curve because it is uniform. See for yourself:
 
 
-![png](files/Fig3.png)
+![](files/Fig3.png)
 
 
 Note that this result follows directly from the definition of the null hypothesis: We did not need to simulate experiments and graph their p-values to obtain this result! Here's the explanation.
@@ -145,7 +144,7 @@ When the null-hypothesis is no longer true (e.g., when two groups are not sample
 Let's visualize this below:
 
 
-![png](files/Fig4.png)
+![](files/Fig4.png)
 
 
 We see that the more power we have to detect the true effect, the more right-skewed the p-curve becomes. Large p-values (e.g., p = .04) become rarer and rarer, and small p-values (e.g., p < .01) become more and more common.
@@ -159,7 +158,7 @@ Finally, there is a third type of p-curve to consider: What happens if the null 
 Here, we consider a very minor form of p-hacking: Researchers run a study with two DVs correlated at .9, and report the second DV if the first one does not reach statistical significance. The graphs below show the p-values obtained across 1,000,000 such simulated experiments.
 
 
-![png](files/Fig5.png)
+![](files/Fig5.png)
 
 
 Here we see that the p-curve is no longer uniform: It is left-skewed!
@@ -169,7 +168,7 @@ The intuition behind this result is simple: The p-values that were slightly abov
 In these simulated experiments, we have access to all the p-values (and not only to the significant ones), so we can easily see it below:
 
 
-![png](files/Fig6.png)
+![](files/Fig6.png)
 
 
 ### Using the p-curve to measure evidential value
@@ -185,7 +184,7 @@ It is very important to select the appropriate statistical results when conducti
 Let's break down a p-curve analysis together, taking a recent paper as an example:
 
 
-![png](files/Fig7.png)
+![](files/Fig7.png)
 
 
     ------------- Summary of p-curve tests -------------
@@ -219,7 +218,7 @@ This should give us little confidence in the phenomenon described in the paper: 
 Let's look at a second paper now.
 
 
-![png](files/Fig8.png)
+![](files/Fig8.png)
 
 
     ------------- Summary of p-curve tests -------------

@@ -4,6 +4,7 @@ subtitle: p-curve Analysis in Python
 description: This Python library implements Simonsohn, Simmons and Nelson's 'p-curve'
   analysis.
 toc: false
+image: featured.png
 ---
 
 <div class="software-links" style="margin-bottom: 1.5em;">

@@ -8,11 +8,7 @@ description: You want to test how well people can learn a normal distribution. H
   can you make sure that the discrete number of values that you will show to participants
   will look 'normal'? This blog post gives you a simple and foolproof way of generating
   values for your experiments.
-tags:
-- Numerical Cognition
-- Python
-- Experiment
-- Tutorial
+categories: [Tutorials]
 toc: true
 ---
 Let's say you are interested in how well participants can learn a normal distribution  (I'm not judging,
@@ -76,7 +72,7 @@ display(fig, metadata=dict(filename="Fig1"))
 
 
     
-![png](files/Fig1.png)
+![](files/Fig1.png)
     
 
 
@@ -141,7 +137,7 @@ display(fig, metadata=dict(filename="Fig2"))
 
 
     
-![png](files/Fig2.png)
+![](files/Fig2.png)
     
 
 
@@ -210,7 +206,7 @@ display(fig, metadata=dict(filename="Fig3"))
 
 
     
-![png](files/Fig3.png)
+![](files/Fig3.png)
     
 
 
@@ -270,7 +266,7 @@ display(fig, metadata=dict(filename="Fig4"))
 
 
     
-![png](files/Fig4.png)
+![](files/Fig4.png)
     
 
 

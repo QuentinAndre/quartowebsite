@@ -6,9 +6,7 @@ date: '2021-02-25'
 date-modified: '2021-02-25'
 description: A two-part blog post on outlier exclusion procedures, and their impact
   on false-positive rates.
-tags:
-- Tutorial
-- Research Methods
+categories: [Research]
 toc: false
 ---
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -418,7 +416,7 @@ display(fig, metadata=dict(filename="Fig1"))
 
 
     
-![png](files/Fig1.png)
+![](files/Fig1.png)
     
 
 
@@ -458,7 +456,7 @@ display(fig, metadata=dict(filename="Fig2"))
 
 
     
-![png](files/Fig2.png)
+![](files/Fig2.png)
     
 
 
@@ -509,7 +507,7 @@ display(fig, metadata=dict(filename="Fig3"))
 
 
     
-![png](files/Fig3.png)
+![](files/Fig3.png)
     
 
 

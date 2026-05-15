@@ -3,9 +3,9 @@ title: "Software"
 listing:
   id: software
   contents: "*/index.qmd"
-  type: default
+  type: grid
   sort: "title asc"
-  fields: [title, description]
+  fields: [image, title, description]
 toc: false
 ---
 

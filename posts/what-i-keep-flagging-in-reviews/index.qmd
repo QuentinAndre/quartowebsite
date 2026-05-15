@@ -1,0 +1,83 @@
+---
+title: What I Usually Flag in Reviews
+author:
+- Quentin André
+date: '2026-05-13'
+description: I asked Claude to summarize five years of my own peer reviews comments. Here are the kind of issues I usually flag.
+categories: [Peer-Review]
+toc: true
+---
+
+I have now written somewhere north of eighty peer reviews for journals in marketing and psychology, most of them in the past two years. I decided to go back and check (with Claude's assistance) which issues most frequently emerge in my comments
+
+Here they are, in case the list is useful as a pre-submission check.
+
+## Gaps Between What You Pre-Registered and What You Did
+
+A covariate gets added to the model. A pre-registered sample size of 400 that becomes 320. A pre-registered dependent outcome that is replaced by another variable.
+
+None of these deviations are necessarily fatal, but you need to **always flag and justify them** [see this excellent article for when and how to do it](https://online.ucpress.edu/collabra/article/10/1/117094/200749/When-and-How-to-Deviate-From-a-Preregistration). A reader who cannot see, at a glance, which analyses were pre-registered and which might have been chosen after looking at the data cannot calibrate the strength of the evidence. When many deviations are swept under the rug, it also reduces my confidence that the authors' results can be trusted.
+
+## Gaps Between Theoretical Claims and Experimental Designs
+
+Say what you do, and do what you say. If your theory claims that a specific factor will affect a particular outcome, then your data needs to isolate changes in this specific factor (holding the rest constant) and measure this particular outcome.
+
+A few (anonymized) examples of this problem:
+
+- A study claims to test how *time pressure* shapes choice, but the time-pressure condition also displays a shorter version of the stimulus, confounding deadline urgency with information complexity.
+- A study claims that *unit framing* (per-week vs. per-year price) changes consumer evaluation, but the two framing conditions also differ in numerical magnitude.
+- A field study claims a causal effect of in-store music tempo on purchase variety, on the basis of correlations between weekly playlists and aggregated store receipts.
+
+This is the most consequential issue on the list, because (i) it cannot usually be fixed without collecting new data and (ii) it significantly lowers my confidence in the researchers' ability to design unconfounded experiments.
+
+## Implausible or Underspecified Mechanisms
+
+Sometimes the design is clean and the effect appears, but the proposed mechanism does not predict the pattern of results — or only predicts it under heroic assumptions.
+
+- A paper claims that a five-minute identity-affirmation writing task shifts brand evaluations two weeks later, implicitly assuming the manipulation's effect persists undiminished through everything that happens in this time interval.
+- A mechanism that requires participants to (i) infer a firm's intentions from a logo cue, (ii) update their beliefs about product authenticity, and (iii) translate those beliefs into willingness-to-pay — all in the four seconds the stimulus is on screen.
+- A mediation study that reveals a small impact on the mediator, and a much larger effect on the dependent variable. The magnitude of the effect should get smaller (and not larger) as it moves down the causal chain.
+
+## Misinterpretations of Mediation and Moderation Techniques
+
+The single most common analytical mistake I flag is the difference-of-significance fallacy: one condition's indirect effect crosses zero (p = .04), the other does not (p = .11), and the paper concludes that the effect "is stronger" in the first condition (Gelman and Stern 2006). It does not. To claim a difference *between* conditions, test the difference directly — an explicit contrast, or the index of moderated mediation (Hayes, 2015). 
+
+A close cousin is **testing for mediation without a total effect.** If X → Y does not show evidence of an effect, X → M → Y is theoretical decoration (Pieters, 2017; Rohrer et al., 2022).
+
+
+## Misinterpreting Null Results
+
+A non-significant test (p = .28 on N = 90) is consistent with "no effect," and it is also consistent with an effect the study lacked power to detect. Again, *absence of evidence is not evidence of absence* (Gelman & Stern, 2006).
+
+The mistake shows up in three different flavors:
+
+- **Failed underpowered replications**, where a null at N = 100 is treated as decisive evidence against an original effect detected at N = 150.
+- **Claims of no differences** based on routine null-hypothesis tests ("the conditions did not differ on baseline familiarity, t = 0.6, p = .54"). If you want to argue equivalence, run a real equivalence test (Lakens, 2017).
+- **Interactions interpreted by inspection** ("the effect held for women but not for men, suggesting moderation by gender"). Same fallacy as discussed in the previous session.
+
+## The Numbers and What They Look Like
+
+A grab-bag of things that always lower my confidence in the quality of a paper:
+
+- **P-values bunched between .02 and .05.** Particularly for non-preregistered studies, this is a significant concern. I [have written about this before](/posts/circling-pvalues-is-fine/).
+- **Degrees of freedom that do not match the design.** A four-level factor reported with one numerator degree of freedom. A 2×3 interaction reported with one numerator df instead of two.
+- **Effect sizes you do not report...** or that are misreported. 
+- **Missing robustness checks.** When the analytical choices are non-trivial ( control selection, exclusion rule) and the study is not pre-registered, include a specification curve or a sensitivity paragraph.
+- **Coding errors in shared data.** When I have the time, I am attempting to reproduce the analysis reported in the paper. More often than not, I find something: a categorical predictor read as continuous, a subset of participants excluded in the paper text but present in the regression, a control that is omitted... 
+
+## Vague Constructs and Vague Writing
+
+The softest category on the list, but a non-trivial share of what I write in reviews. Two main shapes:
+
+**Shifting constructs, and jingle-jangle fallcies.** A meta-analysis where "brand attitude" appears as a focal construct *and* as a sub-component of a second construct on the same page. A paper where "earmarking" is sometimes the mental tagging of money for a purpose and sometimes the physical segregation of money into an account, without the distinction acknowledged. A construct defined operationally in one section and theoretically in another, with the two definitions only loosely related.
+
+**Prose that hides the argument.** A theory section that takes ten pages to establish a hypothesis that could be stated in three. A study described before its dependent variable is defined. A discussion that spends more space anticipating objections than stating findings.
+
+A useful pre-submission test: ask a reader unfamiliar with the project to summarize, in two sentences, what your central construct is and what you find. If the reader cannot, the manuscript still has work to do.
+
+## A Final Thought
+
+AI peer-review tools have gotten really, really good. Before submitting, I now run all my manuscripts through [OpenAIReview](https://openaireview.org/) (available as a free Claude Code skill) or [Refine](https://www.refine.ink/) (a higher-quality tool but also more expensive). 
+
+I think this behavior should be the norm. Reviewers (myself included) are going to become less tolerant of these "obvious" big mistakes now that they can be identified by a variety of cheap tools prior to publication. Reviewers, AEs, and editors are performing thankless unpaid work: The least we can do is ask them to review the best possible version of our manuscripts.
+

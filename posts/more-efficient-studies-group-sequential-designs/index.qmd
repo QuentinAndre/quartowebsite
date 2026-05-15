@@ -1,16 +1,12 @@
 ---
 title: Designing More Efficient Studies with Group Sequential Designs
-subtitle: Creating studies that are powered to detect the smallest effect of interest...
-  without collecting more data than you need to detect bigger effects
 author:
 - Quentin André
 date: '2024-03-27'
 date-modified: '2024-03-27'
 description: Creating studies that are powered to detect the smallest effect of interest...
   without collecting more data than you need to detect bigger effects
-tags:
-- Tutorial
-- Research Methods
+categories: [Research]
 toc: true
 image: featured.png
 ---
@@ -67,7 +63,7 @@ This is a theoretical result, but would these savings materialize in practice? T
 
 The figure below shows the outcome of the studies. Using Fixed N designs, researchers always collected the full sample, and found a significant result in 95% of the studies. If the researchers had used PRIADs instead, they would have often stopped data collection much earlier: In half of the studies, group sequential designs would have found a significant result after collecting only half the data!
 
-![png](files/Figure5.png)
+![](files/Figure5.png)
 
 What about statistical power? The figure shows that most of the studies that reached significance with a Fixed N study would have also reached significance with a group sequential design (between 81% and 99%, depending on the type of PRIAD) .
 

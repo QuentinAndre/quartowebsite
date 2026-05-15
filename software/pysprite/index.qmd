@@ -5,7 +5,7 @@ subtitle: A Python Re-Implementation of the Sample Parameter Reconstruction via 
 description: pysprite is a Python implementation of the SPRITE procedure. The original
   code on which this library is based was developed by James Heathers, Jordan Anaya,
   Tim van der Zee and Nicholas JL Brown.
-title-block-banner: featured.png
+image: featured.png
 ---
 
 <div class="software-links" style="margin-bottom: 1.5em;">

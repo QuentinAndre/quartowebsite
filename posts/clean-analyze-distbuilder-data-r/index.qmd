@@ -6,11 +6,7 @@ date: '2021-04-08'
 description: You have used the distBuilder library to collect data, now what? This
   post walks you through the basics of cleaning and analyzing distribution builder
   data in R.
-tags:
-- Numerical Cognition
-- R
-- distBuilder
-- Tutorial
+categories: [Tutorials]
 toc: true
 ---
 ```R
@@ -230,7 +226,7 @@ theme(
 
 
     
-![png](files/notebook_19_0.png)
+![](files/notebook_19_0.png)
     
 
 
@@ -259,7 +255,7 @@ theme(
 
 
     
-![png](files/notebook_21_0.png)
+![](files/notebook_21_0.png)
     
 
 
@@ -320,7 +316,7 @@ theme_classic()
 
 
     
-![png](files/notebook_26_0.png)
+![](files/notebook_26_0.png)
     
 
 

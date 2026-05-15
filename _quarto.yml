@@ -21,8 +21,8 @@ website:
   favicon: images/icon.png
   google-analytics: "UA-60799896-3"
   navbar:
-    background: "#565A5C"
-    foreground: "#FFFFFF"
+    background: "transparent"
+    foreground: "#565A5C"
     title: "Quentin André"
     left: []
     right:
@@ -37,8 +37,8 @@ website:
       - text: CV
         href: files/vita.pdf
   page-footer:
-    background: "#565A5C"
-    foreground: "#FFFFFF"
+    background: "transparent"
+    foreground: "#565A5C"
     left: "&copy; 2026 Quentin André"
     center: "Made with [Quarto](https://quarto.org)"
     right:
@@ -65,6 +65,12 @@ format:
     css: []
     toc: true
     code-overflow: wrap
+    include-after-body:
+      file: scripts/merge-modified-date.html
+
+filters:
+  - scripts/dedupe-modified.lua
+  - scripts/publication-body.lua
 
 execute:
   freeze: true

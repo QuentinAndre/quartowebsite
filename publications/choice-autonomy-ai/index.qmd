@@ -45,5 +45,6 @@ tags:
 - choice
 - automation
 - AI
+image: featured.jpg
 url-pdf: choice-autonomy-ai.pdf
 ---

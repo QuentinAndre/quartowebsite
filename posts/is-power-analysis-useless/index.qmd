@@ -1,15 +1,12 @@
 ---
 title: 'Power Analysis in Consumer Research: A Fool’s Errand?'
-subtitle: Why power analysis, as traditionally performed, isn't a good tool for choosing
-  sample size.
 author:
 - Quentin André
 date: '2024-01-02'
 date-modified: '2024-01-02'
 description: Why power analysis, as traditionally performed, isn't a good tool for
   choosing sample size.
-tags:
-- Tutorial
+categories: [Research]
 toc: false
 ---
 ## How Many Observations Should a Researcher Collect?

@@ -6,10 +6,15 @@ listing:
   type: default
   sort: "date desc"
   max-description-length: 150
-  fields: [image, title, author, date, description, categories]
-  image-height: 120px
-  categories: true
+  fields: [title, date, description, categories]
+  categories: numbered
 toc: false
+page-layout: full
+format:
+  html:
+    grid:
+      margin-width: 0px
+      sidebar-width: 0px
 ---
 
 :::{#posts}

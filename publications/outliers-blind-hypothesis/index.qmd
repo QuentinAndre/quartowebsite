@@ -30,6 +30,7 @@ publication-short: 'JEP: General'
 tags:
 - research methods
 - outliers
+image: featured.png
 url-pdf: outliers-blind-hypothesis.pdf
 url-code: https://osf.io/3tz76/
 url-dataset: https://osf.io/3tz76/

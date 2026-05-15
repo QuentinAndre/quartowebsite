@@ -7,8 +7,7 @@ date-modified: '2021-08-19'
 description: How can researchers respectfully and constructively flag inadequate statistical
   evidence when we they see it in papers? This post offers some personal reflections
   on this complex question.
-tags:
-- Tutorial
+categories: [Peer-Review]
 toc: false
 ---
 In a [previous blog post](https://quentinandre.net/post/evaluating-statistical-value), I discussed guidelines to evaluate the

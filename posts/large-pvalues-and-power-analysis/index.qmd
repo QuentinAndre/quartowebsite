@@ -7,8 +7,7 @@ date-modified: '2022-08-18'
 description: Can p-values be close to .05 because researchers ran careful power analysis,
   and collected 'just enough' participants to detect their effect? In this blog post,
   I evaluate the merits of this argument.
-tags:
-- Tutorial
+categories: [Peer-Review]
 toc: true
 ---
 [As discussed in an earlier blog post](https://quentinandre.net/post/evaluating-statistical-value/), a predominance of "large" p-values (i.e., p-values that are close to .05) in a paper should lead us to take its conclusions with a grain of salt. Indeed, since large p-values are rare under H1, many of them means that the studies were underpowered to capture the phenomenon of interest, or that the phenomenon of interest simply isn't there. This is the logic behind the "p-curve analysis" (Simonsohn, Nelson and Simmons 2014).
@@ -32,7 +31,7 @@ The problem of this approach is that to [get an effect size estimate that is suf
 
 
     
-![png](files/Fig1.png)
+![](files/Fig1.png)
     
 
 
@@ -52,7 +51,7 @@ The graph below shows the relationship between target power and number of partic
 
 
     
-![png](files/Fig2.png)
+![](files/Fig2.png)
     
 
 
@@ -62,7 +61,7 @@ Now, with a sample size giving them at least 50% power to detect their perfectly
 
 
     
-![png](files/Fig3.png)
+![](files/Fig3.png)
     
 
 

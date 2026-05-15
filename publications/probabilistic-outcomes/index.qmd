@@ -34,6 +34,7 @@ publication-short: ManSci
 tags:
 - lotteries
 - risk aversion
+image: featured.png
 url-pdf: probabilistic-outcomes.pdf
 url-code: https://osf.io/4mue3/
 url-dataset: https://osf.io/4mue3/

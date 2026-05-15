@@ -37,6 +37,7 @@ tags:
 - numerical cognition
 - learning
 - prices
+image: featured.png
 url-pdf: dispersion-spillover.pdf
 url-code: https://osf.io/hvxje/
 url-dataset: https://osf.io/hvxje/

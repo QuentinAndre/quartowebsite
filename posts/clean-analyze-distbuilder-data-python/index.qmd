@@ -7,11 +7,7 @@ date-modified: '2021-04-30'
 description: You have used the distBuilder library to collect data, now what? This
   post walks you through the basics of cleaning and analyzing distribution builder
   data in Python.
-tags:
-- Numerical Cognition
-- Python
-- distBuilder
-- Tutorial
+categories: [Tutorials]
 toc: true
 ---
 ```python
@@ -466,7 +462,7 @@ display(fig, metadata=dict(filename="Fig1"))
 
 
     
-![png](files/Fig1.png)
+![](files/Fig1.png)
     
 
 
@@ -490,7 +486,7 @@ display(fig, metadata=dict(filename="Fig2"))
 
 
     
-![png](files/Fig2.png)
+![](files/Fig2.png)
     
 
 
@@ -600,7 +596,7 @@ display(fig, metadata=dict(filename="Fig3"))
 
 
     
-![png](files/Fig3.png)
+![](files/Fig3.png)
     
 
 
@@ -724,7 +720,7 @@ display(fig, metadata=dict(filename="Fig4"))
 
 
     
-![png](files/Fig4.png)
+![](files/Fig4.png)
     
 
 

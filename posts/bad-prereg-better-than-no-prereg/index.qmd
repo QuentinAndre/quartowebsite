@@ -5,8 +5,7 @@ author:
 date: 2022-07-10
 description: A short blog post showing the immense benefits of pre-registration on
   false-positive rates, even when the pre-registration is underspecified.
-tags:
-- Tutorial
+categories: [Research]
 toc: true
 ---
 If you've never done it before, or even if you've only done it a few times, pre-registration can feel intimidating.
@@ -69,7 +68,7 @@ The graph below shows the distribution of the p-values that these procedures wil
 
 
     
-![png](files/Fig1.png)
+![](files/Fig1.png)
     
 
 

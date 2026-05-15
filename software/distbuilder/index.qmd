@@ -4,7 +4,7 @@ subtitle: Probability elicitation made easy
 description: Are you studying people's perceptions of probabilities or other numerical
   quantities? distBuilder allows you to add distribution builders to your experiments
   with minimal programming knowledge.
-title-block-banner: featured.png
+image: featured.png
 ---
 
 <div class="software-links" style="margin-bottom: 1.5em;">

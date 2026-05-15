@@ -7,11 +7,7 @@ date-modified: '2018-04-14'
 description: Do you wonder how respondents are using distBuilder to construct their
   final distribution? This blog post shows how you can record the history of allocations
   that participants have constructed in distBuilder.
-tags:
-- Numerical Cognition
-- Javascript
-- distBuilder
-- Tutorial
+categories: [Tutorials]
 toc: true
 ---
 In this blog post, I will show you how to keep track of the participants' allocation process when they use distBuilder. 

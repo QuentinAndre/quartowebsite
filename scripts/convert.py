@@ -144,14 +144,10 @@ def convert_publication(slug, src_dir, dest_dir):
     if "tags" in fm and fm["tags"]:
         new_fm["tags"] = fm["tags"]
 
-    # Featured image
+    # Featured image — always include for listing thumbnails
     featured = check_featured_image(src_dir)
     if featured:
-        preview_only = True
-        if isinstance(fm.get("image"), dict):
-            preview_only = fm["image"].get("preview_only", True)
-        if not preview_only:
-            new_fm["image"] = featured
+        new_fm["image"] = featured
 
     # URL fields - make pdf relative
     if "url_pdf" in fm and fm["url_pdf"]:
@@ -222,9 +218,6 @@ def convert_post(slug, src_dir, dest_dir):
     if "title" in fm:
         new_fm["title"] = fm["title"]
 
-    if "subtitle" in fm and fm["subtitle"]:
-        new_fm["subtitle"] = fm["subtitle"]
-
     if "authors" in fm:
         new_fm["author"] = fm["authors"]
 
@@ -249,14 +242,10 @@ def convert_post(slug, src_dir, dest_dir):
     if "draft" in fm and fm["draft"]:
         new_fm["draft"] = fm["draft"]
 
-    # Featured image
+    # Featured image — always include for listing thumbnails
     featured = check_featured_image(src_dir)
     if featured:
-        preview_only = False
-        if isinstance(fm.get("image"), dict):
-            preview_only = fm["image"].get("preview_only", False)
-        if not preview_only:
-            new_fm["image"] = featured
+        new_fm["image"] = featured
 
     # Apply shortcode replacements to body
     body = replace_ref_shortcodes(body)
@@ -299,20 +288,16 @@ def convert_software(slug, src_dir, dest_dir):
     if "title" in fm:
         new_fm["title"] = fm["title"]
 
-    if "subtitle" in fm and fm["subtitle"]:
-        new_fm["subtitle"] = fm["subtitle"]
-
     if "summary" in fm and fm["summary"]:
         new_fm["description"] = fm["summary"]
 
     if "toc" in fm:
         new_fm["toc"] = fm["toc"]
 
-    # Image as title banner
-    if fm.get("image_as_title"):
-        featured = check_featured_image(src_dir)
-        if featured:
-            new_fm["title-block-banner"] = featured
+    # Featured image — always include for listing thumbnails
+    featured = check_featured_image(src_dir)
+    if featured:
+        new_fm["image"] = featured
 
     # Generate links HTML block to prepend to body
     links_html = ""
