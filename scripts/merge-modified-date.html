@@ -22,11 +22,10 @@
       if (modEl) modDateText = modEl.textContent.trim();
     }
   });
-  if (pubHeading && pubDateEl) {
-    let combined = "Published " + pubDateEl.textContent.trim();
-    if (modDateText) combined += ", last modified " + modDateText;
-    pubHeading.textContent = combined;
-    if (pubContents) pubContents.remove();
+  if (pubHeading) pubHeading.textContent = "Published";
+  if (pubDateEl && modDateText) {
+    pubDateEl.textContent =
+      pubDateEl.textContent.trim() + ", last modified " + modDateText;
   }
   if (modBlock) modBlock.remove();
 })();

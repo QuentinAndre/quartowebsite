@@ -5,6 +5,7 @@ listing:
   contents: "*/index.qmd"
   sort: "date desc"
   template: _listing-template.ejs
+  date-format: 'YYYY'
 toc: false
 page-layout: full
 format:

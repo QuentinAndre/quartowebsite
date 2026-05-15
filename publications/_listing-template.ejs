@@ -1,29 +1,6 @@
 <div class="publications-list">
-<% for (const item of items) { %>
-<article class="pub-card">
-  <h3 class="pub-title">
-    <a href="<%= item.path %>"><%- item.title %></a>
-  </h3>
-  <div class="pub-meta">
-    <%
-      let authors = '';
-      if (item.author) {
-        authors = Array.isArray(item.author) ? item.author.join(', ') : item.author;
-      }
-    %>
-    <% if (authors) { %><span class="pub-authors"><%- authors %></span><% } %>
-    <% if (item.publication) { %> &middot; <em class="pub-venue"><%- item.publication %></em><% } %>
-    <% if (item.date) { %> &middot; <span class="pub-date"><%- item.date %></span><% } %>
-  </div>
-  <% if (item.description) { %>
-  <p class="pub-desc"><%- item.description %></p>
-  <% } %>
-  <div class="pub-buttons">
-    <% if (item['url-pdf']) { %><a href="<%= item['url-pdf'] %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> Manuscript</a><% } %>
-    <% if (item['url-appendix']) { %><a href="<%= item['url-appendix'] %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Appendix</a><% } %>
-    <% if (item['url-code']) { %><a href="<%= item['url-code'] %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Code / OSF</a><% } %>
-    <% if (item.doi) { %><a href="https://doi.org/<%- item.doi %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i> DOI</a><% } %>
-  </div>
-</article>
-<% } %>
-</div>
+<% for (const item of items) { %><article class="pub-card">
+<h3 class="pub-title"><a href="<%= item.path %>"><%- item.title %></a></h3>
+<div class="pub-meta"><% if (item.author) { %><span class="pub-authors"><%- Array.isArray(item.author) ? item.author.join(', ') : item.author %></span><% } %><% if (item.publication) { %> &middot; <em class="pub-venue"><%- item.publication %></em><% } %><% if (item.date) { %> &middot; <span class="pub-date"><%- (String(item.date).match(/\d{4}/) || [item.date])[0] %></span><% } %></div>
+<% if (item.description) { %><p class="pub-desc"><%- item.description %></p><% } %><div class="pub-buttons"><% if (item['url-pdf']) { %><a href="<%= item['url-pdf'] %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> Manuscript</a><% } %><% if (item['url-appendix']) { %><a href="<%= item['url-appendix'] %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Appendix</a><% } %><% if (item['url-code']) { %><a href="<%= item['url-code'] %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Code / OSF</a><% } %><% if (item.doi) { %><a href="https://doi.org/<%- item.doi %>" class="pub-btn" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i> DOI</a><% } %></div>
+</article><% } %></div>

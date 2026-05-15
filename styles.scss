@@ -113,8 +113,11 @@ h2, .h2 {
    flex reordering is needed. */
 
 /* Title block: extra space below + a thin gold rule to separate the
-   header (title + subtitle + meta) from the post body. */
-#title-block-header:has(.description) {
+   header (title + subtitle + meta) from the post body. Same treatment
+   on listing pages (Blog Posts, Publications) so the h1 has the same
+   visual landing as on article pages. */
+#title-block-header:has(.description),
+body:has(.quarto-listing) #title-block-header {
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(207, 184, 124, 0.5);
   margin-bottom: 2rem;
@@ -153,11 +156,24 @@ h2, .h2 {
   display: inline;
 }
 
-/* Hide Author meta block (all posts are mine).
-   Assumes Author is always the first meta entry, which Quarto guarantees
-   when both author and date are set in the YAML. */
-#title-block-header:has(.description) .quarto-title-meta > div:first-child {
+/* Hide the author meta block on blog posts (all posts are mine).
+   On publication pages — detected via the sibling .abstract block that
+   Quarto auto-renders from the YAML `abstract:` field — keep authors
+   visible (papers have multiple co-authors worth showing). */
+body:not(:has(.abstract)) #title-block-header:has(.description) .quarto-title-meta > div:first-child {
   display: none;
+}
+
+/* On publication pages, stack the meta blocks vertically (authors,
+   published, doi each on their own line) rather than running them inline. */
+body:has(.abstract) #title-block-header:has(.description) .quarto-title-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+body:has(.abstract) #title-block-header:has(.description) .quarto-title-meta > div {
+  display: block;
 }
 
 #title-block-header:has(.description) .quarto-title-meta-heading {
@@ -175,13 +191,15 @@ h2, .h2 {
   margin: 0;
 }
 
-/* If a "Modified" block exists (3rd position after hidden Author), render it
-   as ", last modified <date>" inline, suppressing the default "Modified" label. */
-#title-block-header:has(.description) .quarto-title-meta > div:nth-child(3)::before {
+/* Modified meta block (when present) renders inline as ", last modified <date>".
+   Targeted by its .date-modified child rather than by position — earlier
+   the :nth-child(3) selector was misfiring on the DOI block on pub pages
+   after the merge-modified-date.html script removes the Modified div. */
+#title-block-header:has(.description) .quarto-title-meta > div:has(.date-modified)::before {
   content: ", last modified ";
 }
 
-#title-block-header:has(.description) .quarto-title-meta > div:nth-child(3) .quarto-title-meta-heading {
+#title-block-header:has(.description) .quarto-title-meta > div:has(.date-modified) .quarto-title-meta-heading {
   display: none;
 }
 
@@ -215,13 +233,29 @@ h2, .h2 {
   text-align: right;
 }
 
+/* Push the center section's content to the bottom of its box, so it
+   stays bottom-aligned even when the right section's icons make the
+   flex row taller than a single text line. */
+.nav-footer .nav-footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .nav-footer .nav-footer-right .footer-items {
-  margin: 0;
-  padding-left: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
   display: flex;
   gap: 0.5rem;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+.nav-footer .nav-footer-right .footer-items li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .nav-footer .nav-footer-right .nav-link {
@@ -394,6 +428,14 @@ h2, .h2 {
 .pub-btn .bi {
   color: inherit !important;
   font-size: 0.95em;
+}
+
+/* On publication pages, omit both the description (subtitle below the
+   title) and the .abstract block. The PDF embed below shows the full
+   paper; the inline abstract was felt to be redundant. */
+body:has(.abstract) #title-block-header .description,
+.abstract {
+  display: none;
 }
 
 /* Inline-embedded manuscript on the publication page */
