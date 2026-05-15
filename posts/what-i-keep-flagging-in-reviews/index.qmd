@@ -5,7 +5,7 @@ author:
 date: '2026-05-13'
 description: I asked Claude to summarize five years of my own peer reviews comments. Here are the kind of issues I usually flag.
 categories: [Peer-Review]
-toc: true
+toc: false
 ---
 
 I have now written somewhere north of eighty peer reviews for journals in marketing and psychology, most of them in the past two years. I decided to go back and check (with Claude's assistance) which issues most frequently emerge in my comments
