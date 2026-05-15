@@ -19,7 +19,7 @@ project:
 website:
   title: "Quentin André"
   favicon: images/icon.png
-  google-analytics: "UA-60799896-3"
+  google-analytics: "G-NJC77TQHY4"
   navbar:
     background: "transparent"
     foreground: "#565A5C"
