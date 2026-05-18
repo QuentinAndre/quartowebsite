@@ -18,7 +18,7 @@ project:
 
 website:
   title: "Quentin André"
-  favicon: images/icon.png
+  favicon: images/favicon-qa.png
   google-analytics: "G-NJC77TQHY4"
   navbar:
     background: "transparent"
