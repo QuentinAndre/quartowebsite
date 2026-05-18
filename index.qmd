@@ -1,6 +1,6 @@
 ---
 title: "Quentin André"
-subtitle: "Assistant Professor of Marketing"
+subtitle: "Assistant Professor of Marketing<br>Leeds School of Business, CU Boulder"
 about:
   id: about
   template: solana
@@ -28,9 +28,9 @@ toc: false
 
 :::{#about}
 
-I am an Assistant Professor of Marketing at the [Leeds School of Business, University of Colorado Boulder](https://www.colorado.edu/business/quentin-andre).
+I study judgment and decision making: how people form beliefs and make choices under uncertainty. My research focuses on managerial reasoning (how marketing managers learn from data and predict outcomes), numerical cognition (how we perceive and reason about quantities), and probabilistic reasoning (how we weigh evidence and assess chance). 
 
-My research focuses on judgment and decision making in general, with a special interest in consumer
-financial decision-making, numerical cognition, and probabilistic reasoning. I also care about open-science, replicability, and reproducibility.
+Open science also shapes how I work: I share reproducible research workflows, design open-source software, and re-examine published papers.
 
 :::
+
