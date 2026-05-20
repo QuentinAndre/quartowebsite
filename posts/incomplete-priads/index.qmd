@@ -7,13 +7,12 @@ description: Two recent papers in marketing use PRIADs in their pre-registration
   without specifying the correction or the critical *p*-values, and without disclosing
   the sequential design in the main text. Here is what goes wrong.
 categories: [Research, Peer-Review]
-toc: true
+toc: false
 ---
 
-When Nick Reinholtz and I wrote our Pre-Registered Interim Analysis Design (PRIAD; André and Reinholtz 2024) paper, we wanted to give researchers the ability to adopt more flexible designs in their research, and to save valuable resources.
+When Nick Reinholtz and I wrote our Pre-Registered Interim Analysis Design (PRIAD; Andr&eacute; and Reinholtz 2024) paper, we wanted to give researchers the ability to adopt more flexible designs in their research, and to save valuable resources.
 
 However, we were also concerned that this additional flexibility would result in too many false-positives, which is why we made it crystal-clear that every PRIAD should be accompanied with a pre-registration specifying:
-
 * That a PRIAD will be used
 * The number and timing of the peeks
 * The type of correction (O'Brien-Fleming or Pocock)
@@ -25,37 +24,36 @@ Let's discuss two recent examples in marketing.
 
 ## Szocs et al. (2024, Journal of Consumer Psychology)
 
-The pre-registration of Study 3 ([AsPredicted #179174](https://aspredicted.org/8HC_TYY)) mentions: "We will recruit up to 600 US based Prolific panelists. Following the PRIAD approach (Andre and Reinholtz 2024), we will conduct two interim analyses at N = 200 and N = 400". There is a problem already: The type of correction (Pocock vs. O'Brien-Fleming) is not specified, and the resulting *p*-values are not disclosed.
+The pre-registration of Study 3 ([AsPredicted #179174](https://aspredicted.org/8HC_TYY)) mentions: "We will recruit up to 600 US based Prolific panelists. Following the PRIAD approach (Andre and Reinholtz 2024), we will conduct two interim analyses at N = 200 and N = 400". There is a problem already: The type of correction (Pocock vs. O'Brien-Fleming) is not specified, and the resulting p-values are not disclosed.
 
-It gets worse though. The write-up of the paper says "We requested 200 US-based Prolific panelists and received 199 completed surveys". The stop at 200 observations suggests that researchers conducted a peek at N = 200, but the paper never mentions interim analyses, sequential testing, or PRIAD at all.
+It gets worse though. The write-up of the paper says "We requested 200 US-based Prolific panelists and received 199 completed surveys". The stop at 200 observations suggest that researchers conducted a peek at N = 200, but the paper never mentions interim analyses, sequential testing, or PRIAD at all.
 
-The one saving grace is that the *p*-value is *p* < .0001, which is below the conservative O'Brien-Fleming alpha threshold (0.00052).
+The one saving grace is that the p-value is p < .0001, which is below the conservative O'Brien-Fleming alpha threshold (0.00052).
 
-So (i) the PRIAD is incomplete, (ii) the results silently deviate from the pre-registration, but at least the statistical conclusions are still valid.
+So (i) the PRIAD is incomplete, (ii) the results silently deviate from the pre-registration, but at least the statistical conclusion are still valid.
 
 Things do not always turn up so favorably.
 
 ## Kim et al. (2026, Journal of Marketing)
 
 Kim et al. (2026) repeat the same pattern across **six** pre-registrations, one for each of Studies 2, 3a, 3b, 4a, 4b, and 4c:
-
 1. Each of these pre-registrations invokes PRIAD, but none specify the correction or the resulting critical *p*-values.
 2. The main text of the paper never mentions interim analyses, sequential testing, or PRIAD.
 
-The reported sample sizes in the paper line up with the pre-registered PRIAD looks — sometimes the first peek, sometimes the last — but the reader is given no way to tell which.
+The reported sample sizes in the paper line with the pre-registered PRIAD looks — sometimes the first look, sometimes the last — but the reader is given no way to tell which.
 
 ... And unlike in Szocs et al. (2024), the silent omissions of the PRIADs are consequential: Many of the results reported in the paper would NOT be significant with an O'Brien-Fleming correction.
 
 The table below summarizes, for each study, the pre-registered design, the sample size reported in the paper, the main hypothesis test, and the O'Brien-Fleming (OBF) critical *p*-value for the PRIAD peek that the reported sample size corresponds to.[^1]
 
-| Study | Pre-reg | PRIAD # of Peeks (k) | Paper N | Peek Reached | Main hypothesis test | OBF critical *p* | Robust to OBF? |
-|-------|---------|----------------------|---------|--------------|----------------------|------------------|----------------|
-| 2  | [#251407](https://aspredicted.org/9aj6mc.pdf)    | N = [200, 300], k = 2       | 189 (200 recruited)  | 1st of 2 | χ²(1) = 9.48, *p* = .002      | 0.014  | Yes    |
-| 3a | [#185369](https://aspredicted.org/3s4f-pbw4.pdf) | N = [400, 600, 800], k = 3  | 805                  | 3rd of 3 | Wald χ²(1) = 3.16, *p* = .075 | .043   | **No** |
-| 3b | [#236425](https://aspredicted.org/vrjz-ht6s.pdf) | N = [500, 1000], k = 2      | 846 (1000 recruited) | 2nd of 2 | Wald χ²(1) = 5.63, *p* = .018 | .048   | Yes    |
-| 4a | [#235978](https://aspredicted.org/mn9h-3nq9.pdf) | N = [500, 1000], k = 2      | 429 (501 recruited)  | 1st of 2 | Wald χ²(1) = 5.83, *p* = .016 | .005   | **No** |
-| 4b | [#179021](https://aspredicted.org/nms7-m4n9.pdf) | N = [400, 600, 800], k = 3  | 750 (800 recruited)  | 3rd of 3 | Wald χ²(1) = 3.00, *p* = .083 | .043   | **No** |
-| 4c | [#274736](https://aspredicted.org/5zf54q.pdf)    | N = [400, 800, 1200], k = 3 | 387 (400 recruited)  | 1st of 3 | Wald χ²(1) = 3.90, *p* = .048 | .0005  | **No** |
+| Study | Pre-reg                                          | PRIAD # of Peeks (k)        | Paper N              | Peek Reached | Main hypothesis test          | OBF critical *p* | Robust to OBF? |
+| ----- | ------------------------------------------------ | --------------------------- | -------------------- | ------------ | ----------------------------- | ---------------- | -------------- |
+| 2     | [#251407](https://aspredicted.org/9aj6mc.pdf)    | N = [200, 300], k = 2       | 189 (200 recruited)  | 1st of 2     | χ²(1) = 9.48, *p* = .002      | 0.014            | Yes            |
+| 3a    | [#185369](https://aspredicted.org/3s4f-pbw4.pdf) | N = [400, 600, 800], k = 3  | 805                  | 3rd of 3     | Wald χ²(1) = 3.16, *p* = .075 | .043             | **No**         |
+| 3b    | [#236425](https://aspredicted.org/vrjz-ht6s.pdf) | N = [500, 1000], k = 2      | 846 (1000 recruited) | 2nd of 2     | Wald χ²(1) = 5.63, *p* = .018 | .048             | Yes            |
+| 4a    | [#235978](https://aspredicted.org/mn9h-3nq9.pdf) | N = [500, 1000], k = 2      | 429 (501 recruited)  | 1st of 2     | Wald χ²(1) = 5.83, *p* = .016 | .005             | **No**         |
+| 4b    | [#179021](https://aspredicted.org/nms7-m4n9.pdf) | N = [400, 600, 800], k = 3  | 750 (800 recruited)  | 3rd of 3     | Wald χ²(1) = 3.00, *p* = .083 | .043             | **No**         |
+| 4c    | [#274736](https://aspredicted.org/5zf54q.pdf)    | N = [400, 800, 1200], k = 3 | 387 (400 recruited)  | 1st of 3     | Wald χ²(1) = 3.90, *p* = .048 | .0005            | **No**         |
 
 Four of the six pre-registered main hypothesis tests do not clear the O'Brien-Fleming threshold for the look they landed at. Three of them (Studies 3a, 4b, 4c) also fail under the more lenient Pocock correction (constant boundary *p* = .0245 for k = 3, *p* = .0294 for k = 2). Study 4c is the clearest case: the paper reports *p* = .048 at N = 387 as a "significant" interaction, but this sample size corresponds to the *first* of three pre-registered PRIAD looks, where the OBF threshold is *p* < .0005 and the Pocock threshold is *p* < .022. The reported *p*-value misses both.
 
@@ -69,5 +67,3 @@ If you use PRIAD (or any sequential design):
 2. **Disclose in the paper.** State that the study used a sequential design, name PRIAD (or whatever procedure you used), report the looks, report the critical values, and report which look produced the final sample. This belongs in the methods section of the paper.
 
 The point of pre-registration is to take researcher discretion out of the inferential pipeline. The point of writing methods clearly is to let readers evaluate the inference. A PRIAD that is only mentioned only in a pre-registration, and only with the looks but not the critical values, does neither.
-
-[^1]: OBF critical *p*-values use standard equal-spacing Lan-DeMets O'Brien-Fleming boundaries for k = 2 (*p* = .005, .048) and k = 3 (*p* = .0005, .014, .045) at two-sided α = .05. Pocock values are *p* = .0294 for k = 2 and *p* = .0245 for k = 3. For Studies 2, 3a, 3b, 4a, and 4b the pre-registered looks are not exactly equally spaced; exact thresholds would shift slightly but the qualitative picture (pass/fail) is unchanged. Study 4c's looks at N = [400, 800, 1200] are exactly equally spaced.
