@@ -47,4 +47,5 @@ tags:
 - AI
 image: featured.jpg
 url-pdf: choice-autonomy-ai.pdf
+url-md: choice-autonomy-ai.md
 ---

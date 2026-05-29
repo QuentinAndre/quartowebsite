@@ -42,5 +42,6 @@ tags:
 - hypothesis testing
 image: featured.png
 url-pdf: priad.pdf
+url-md: priad.md
 url-code: https://osf.io/74596/
 ---

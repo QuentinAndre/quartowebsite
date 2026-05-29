@@ -33,6 +33,7 @@ function Pandoc(doc)
     end
   end
   add_btn(meta["url-pdf"],      "bi-file-earmark-pdf",  "Manuscript")
+  add_btn(meta["url-md"],       "bi-markdown",          "Markdown")
   add_btn(meta["url-appendix"], "bi-file-earmark-text", "Appendix")
   add_btn(meta["url-code"],     "bi-box-arrow-up-right", "Code / OSF")
   if #btns > 0 then

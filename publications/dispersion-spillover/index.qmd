@@ -39,6 +39,7 @@ tags:
 - prices
 image: featured.png
 url-pdf: dispersion-spillover.pdf
+url-md: dispersion-spillover.md
 url-code: https://osf.io/hvxje/
 url-dataset: https://osf.io/hvxje/
 url-video: https://www.youtube.com/watch?v=KhqY8D-8BLM

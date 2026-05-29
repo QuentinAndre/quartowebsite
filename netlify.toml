@@ -4,3 +4,16 @@
 
 [build.environment]
   QUARTO_VERSION = "1.9.37"
+
+# Serve the LLM-readable Markdown manuscripts and llms.txt as UTF-8 so accented
+# characters (e.g. "André") render correctly when viewed inline in a browser.
+# The files are already UTF-8 on disk; this just makes the charset explicit.
+[[headers]]
+  for = "/*.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"

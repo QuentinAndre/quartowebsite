@@ -7,8 +7,10 @@ project:
   resources:
     - "files/**"
     - "images/**"
+    - "llms.txt"
     - "publications/**/*.pdf"
     - "publications/**/*.html"
+    - "publications/**/*.md"
     - "publications/**/featured.*"
     - "posts/**/files/**"
     - "posts/**/featured.*"
@@ -18,6 +20,7 @@ project:
 
 website:
   title: "Quentin André"
+  site-url: "https://quentinandre.net"
   favicon: images/favicon-qa.png
   google-analytics: "G-NJC77TQHY4"
   navbar:

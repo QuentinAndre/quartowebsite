@@ -32,6 +32,7 @@ tags:
 - outliers
 image: featured.png
 url-pdf: outliers-blind-hypothesis.pdf
+url-md: outliers-blind-hypothesis.md
 url-code: https://osf.io/3tz76/
 url-dataset: https://osf.io/3tz76/
 links:
