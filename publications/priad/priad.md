@@ -50,7 +50,9 @@ To illustrate, consider the group sequential design shown in Figure 1: A researc
 
 A GROUP SEQUENTIAL DESIGN WITH TWO STAGES
 
-<img src="media/image1.png" style="width:4.08177in;height:6.52393in" />
+![Figure 1. Flowchart of a two-stage group sequential design.](https://quentinandre.net/publications/priad/media/image1.png)
+
+*Figure 1 (visual description): Flowchart of a two-stage group sequential design. Step 1: "Collect 50% of observations", then "Run Test". If the interim p-value is below its critical threshold (p1 < p1^crit), the design stops and rejects the null hypothesis; otherwise (p1 ≥ p1^crit) it proceeds to "Collect remaining 50% of sample" and "Run Test" again. At this final test, if p2 < p2^crit the null is rejected, otherwise the design "fails to reject" the null.*
 
 Let’s call the critical p-value at the interim analysis $`p_{1}^{crit}`$, the critical p-value at the final analysis $`p_{2}^{crit}`$, and the total false positive rate of the experiment ɑ<sub>total</sub>. To keep ɑ<sub>total</sub> at the desired 5% level, the following equality must be true:
 
@@ -98,7 +100,9 @@ Figure 2 illustrates the impact of different futility thresholds on the decision
 
 IMPACT OF FUTILITY THRESHOLDS ON THE DECISION MADE AT THE INTERIM ANALYSIS
 
-<img src="media/image2.png" style="width:6.49817in;height:4.14583in" />
+![Figure 2. Effect of futility thresholds on the interim-analysis decision.](https://quentinandre.net/publications/priad/media/image2.png)
+
+*Figure 2 (visual description): Three stacked density curves of the t-value at the interim analysis (x-axis ≈ −3 to +3), one per futility setting. "No Futility Threshold" (top): the curve splits into a large blue region labeled "Collect Remaining 50%" and a small green right-tail labeled "Reject H0". "Low Futility Threshold" (middle): adds a red left-tail region labeled "Stop for Futility" for sufficiently negative interim t-values, shrinking the blue continue region. "High Futility Threshold" (bottom): the red "Stop for Futility" region expands to roughly the entire left half (interim t-values below ~0), leaving a smaller blue continue region and the same small green "Reject H0" right tail. Higher futility thresholds thus abandon more studies early.*
 
 # PRE-REGISTERED INTERIM ANALYSIS DESIGNS
 
@@ -202,9 +206,11 @@ To illustrate this benefit, let us assume a researcher studying a main effect, w
 
 COMPARISON OF THE EFFICIENCY ACHIEVED BY PRIADs AND BY FIXED N DESIGNS
 
-<img src="media/image3.png" style="width:6.49817in;height:4.14583in" />
+![Figure 3. Power achieved versus average N collected for PRIADs and Fixed N designs.](https://quentinandre.net/publications/priad/media/image3.png)
 
 NOTE. — This graph shows the efficiency (power achieved for an expected N collected) of PRIADs and Fixed N designs when studying an effect $`d \sim \mathcal{N}(.4,\ 0.102)`$.
+
+*Figure 3 (visual description): Scatter plot of average power achieved (y-axis ~0.47–0.98) against the average number of observations collected (x-axis ~100–800). A gray concave curve traces the Fixed N benchmark (power rising with N). Four PRIAD designs appear as single points, all in the upper-left "Better Performance Than Fixed N" region above the curve: 4 Stages Pocock (green diamond, ≈302 N at ≈0.97 power), 4 Stages O'Brien-Fleming (blue circle), 2 Stages Pocock (orange triangle), and 2 Stages O'Brien-Fleming (red square) — each reaching ~0.97–0.98 power at an average N (~300–480) well below what the Fixed N curve requires for the same power. A "Worse Performance Than Fixed N" label marks the region below the curve.*
 
 We can use this gray line as a benchmark to compare the efficiency of various types of PRIADs to Fixed N designs: Any (N, Power) combination that falls below this line achieves a smaller amount of power for a given N, and any combination above this line achieves a greater amount of power for a given N.
 
@@ -228,9 +234,11 @@ Figure 4 formalizes this intuition and shows, for different levels of power (x-a
 
 RELATIVE EFFICIENCY OF DIFFERENT KINDS OF PRIADs
 
-<img src="media/image4.png" style="width:6.5in;height:4.15in" />
+![Figure 4. Efficiency gains of PRIADs relative to Fixed N across levels of statistical power.](https://quentinandre.net/publications/priad/media/image4.png)
 
 NOTE. — Efficiency (on the y-axis) is defined as the ratio of observations collected by a Fixed N design (vs. a PRIAD) to achieve a given level of statistical power (on the x-axis).
+
+*Figure 4 (visual description): Line plot of efficiency gain — (observations a Fixed N design needs) ÷ (observations a PRIAD needs) — on the y-axis (0.6–2.0) against target statistical power on the x-axis (0.10–0.99), with a dashed horizontal break-even line at 1.0. Four PRIAD configurations are shown: 2 Stages O'Brien-Fleming (red solid), 4 Stages O'Brien-Fleming (blue dashed), 2 Stages Pocock (orange dashed), and 4 Stages Pocock (green dotted). All curves rise with power: at low power (≲0.2–0.5) several dip below 1 (PRIAD less efficient), but at higher power all exceed 1, reaching roughly 1.4 (two-stage O'Brien-Fleming) up to ~1.9 (four-stage Pocock) at power 0.99 — PRIADs save proportionally more observations the higher the target power.*
 
 This graph shows that PRIADs using the conservative O’Brien-Fleming correction are, even at very low levels of power, more efficient than Fixed N designs: As long as the researcher has more than ~25% power to detect an effect, these PRIADs will collect fewer observations than a Fixed N to achieve of desired level of power. The efficiency of these PRIADs then slowly ramps up with the level of power achieved by the researcher: At 80% power, a 2-stage (4-stage) O’Brien-Fleming PRIAD will save the researcher 12% (20%) of their participant costs. PRIAD using the liberal Pocock correction require more power to break-even with Fixed N designs (between 50 and 55%, depending on the number of stages), but then go on to achieve more substantial savings: At 80% power, a 2-stage (4-stage) Pocock PRIAD would save the researcher 17% (24%) in participant costs.
 
@@ -276,7 +284,9 @@ We report two types of results. First, we assess the outcomes of running the PRI
 
 OBSERVED AND COUNTERFACTUAL OUTCOMES OBTAINED BY FIXED N DESIGNS AND FOUR KINDS OF PRIADs
 
-<img src="media/image5.png" style="width:6.49817in;height:4.14583in" />
+![Figure 5. Observed and counterfactual outcomes for Fixed N designs and four kinds of PRIADs.](https://quentinandre.net/publications/priad/media/image5.png)
+
+*Figure 5 (visual description): Two stacked panels of 100%-stacked bars — "Two Stages" (top) and "Four Stages" (bottom) — showing the percentage of studies (y-axis 0–100) by outcome for three design types on the x-axis: Fixed N, O'Brien-Fleming, and Pocock. Segments encode when (or whether) each study reached significance: Sig. at 25% (blue), at 50% (purple), at 75% (mauve), at 100% (red), and Not sig. at 100% (dark gray). For Fixed N almost the entire bar is "Sig. at 100%" (red). For the PRIADs a growing share reaches significance at earlier interim looks (25–75% of the sample), most pronounced for four-stage Pocock, where roughly 38% are already significant at 25% of the data; the dark "Not sig." segment is also somewhat larger for the more aggressive (Pocock, four-stage) designs.*
 
 Looking at the “Two Stages” PRIADs first (top panel), we see that researchers would have, for many studies, collected only half of the planned sample: The two-stage Pocock and O’Brien-Fleming PRIADs would have respectively found a significant result halfway through data collection in 63% and 43% of the studies. Importantly, the overwhelming majority of the studies that yielded a significant result with a Fixed N design would have also reached statistical significance with a two-stage PRIAD: 99% of the originally significant studies delivered a significant result with the O’Brien-Fleming correction, and 95% with the Pocock correction.
 
@@ -377,7 +387,9 @@ No primary data was collected for this paper. The two authors jointly identified
 
 This flowchart should not be taken as offering “correct” choices: only as suggestions that researchers can use. We also encourage researchers to use the [PRIApp](https://priadconsumerresearch.shinyapps.io/PRIApp/) to simulate the impact of these defaults.
 
-<img src="media/image6.png" style="width:9in;height:4.75139in" alt="A diagram of a process Description automatically generated" />
+![Decision tree for selecting an off-the-shelf PRIAD from hypothesis type and maximum sample size.](https://quentinandre.net/publications/priad/media/image6.png)
+
+*Figure (Appendix A, visual description): A decision-tree flowchart for choosing a default PRIAD. Start → "Type of Hypothesis?". One branch — "Main Effect, Mediation, Reversal Moderation" — leads to "How Large is MaxN?": MaxN < 400 → Two-Stage Pocock; 400 ≤ MaxN < 600 → Three-Stage Pocock; MaxN ≥ 600 → Four-Stage Pocock. The other branch — "Moderated Mediation, Attenuated Interaction" — leads to a second "How Large is MaxN?": MaxN < 600 → Two-Stage O'Brien-Fleming; 600 ≤ MaxN < 1200 → Three-Stage O'Brien-Fleming; MaxN ≥ 1200 → Four-Stage O'Brien-Fleming.*
 
 # APPENDIX B: REJECTION THRESHOLDS
 

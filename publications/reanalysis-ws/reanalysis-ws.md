@@ -77,9 +77,11 @@ where $`\beta_{G}`$ reflects the utility of a unit increase in gains, $`\beta_{L
 
 W&S report that *λ* = 1 when gains and losses have similar magnitudes (i.e., both small or both large), *λ* \> 1 when gains are large and losses are small, and *λ* \< 1 when gains are small and losses are large. See Figure 1. They take this pattern of results to suggest that loss aversion can disappear and reverse, and that decision by sampling is the origin of loss aversion.
 
-| <img src="media/image1.png" style="width:6.53125in;height:4.35417in" /> |
-|----|
-| Figure 1. Median estimates of *λ* obtained in each of the four experimental conditions of Experiment 1 (1a + 1b). We use the condition labels from W&S. Error bars are bootstrapped 95% confidence intervals of the medians (hence the asymmetry). |
+![Figure 1. Median estimates of λ across the four experimental conditions of Experiment 1.](https://quentinandre.net/publications/reanalysis-ws/media/image1.png)
+
+Figure 1. Median estimates of *λ* obtained in each of the four experimental conditions of Experiment 1 (1a + 1b). We use the condition labels from W&S. Error bars are bootstrapped 95% confidence intervals of the medians (hence the asymmetry).
+
+*Figure 1 (visual description): Point-range plot. The y-axis is loss aversion λ = −β_L/β_G (~0.8–1.8) with a horizontal reference line at λ = 1; the x-axis lists the four conditions 20G-20L, 20G-40L, 40G-20L, 40G-40L (gain/loss ranges). Median λ with bootstrapped 95% CIs is ≈1.00 (20G-20L), ≈0.86 (20G-40L), ≈1.73 (40G-20L — well above 1), and ≈1.02 (40G-40L). Estimated loss aversion thus swings sharply across conditions, peaking in 40G-20L — the pattern W&S interpreted as loss aversion disappearing and reversing.*
 
 # λ WILL DIFFER WITHOUT DECISION BY SAMPLING
 
@@ -131,9 +133,11 @@ We repeat this simulation and analysis for three different decision rules:
 
 Figure 2 compares the median estimates obtained on this simulated data with the estimates obtained on the pooled data from Experiments 1a and 1b in W&S. While simulated participants evaluated lotteries without memory for previously seen outcomes, and they followed the same decision rule across conditions, we find the same pattern of results as in W&S.
 
-| <img src="media/image2.png" style="width:6.53125in;height:4.35417in" /> |
-|----|
-| Figure 2. Comparison of the median estimates of *λ* obtained on data from W&S (circles) and data simulated with the three different decision rules (diamonds, squares and triangles). Error bars are bootstrapped 95% confidence intervals of the medians (hence the asymmetry). |
+![Figure 2. Median λ from W&S data versus three simulated decision rules.](https://quentinandre.net/publications/reanalysis-ws/media/image2.png)
+
+Figure 2. Comparison of the median estimates of *λ* obtained on data from W&S (circles) and data simulated with the three different decision rules (diamonds, squares and triangles). Error bars are bootstrapped 95% confidence intervals of the medians (hence the asymmetry).
+
+*Figure 2 (visual description): Same four conditions on the x-axis; λ on the y-axis (~0.5–2.0) with a reference line at 1. Four series: Original W&S data (blue circles) and three simulated decision rules that contain no loss aversion — Log-Linear (orange diamonds), Gain-Loss Ratio (green squares), Discontinuous EV (red triangles); medians with 95% CIs. Annotated λ values per condition: 20G-20L — λ_O = 1.00, λ_LL = 1.00, λ_GLR = 1.06, λ_DEV = 1.00; 20G-40L — λ_O = 0.86, λ_LL = 0.52, λ_GLR = 0.50, λ_DEV = 0.79; 40G-20L — λ_O = 1.73, λ_LL = 2.00, λ_GLR = 2.00, λ_DEV = 1.24; 40G-40L — λ_O = 1.02, λ_LL = 1.00, λ_GLR = 1.08, λ_DEV = 1.00. The loss-aversion-free simulated rules reproduce the same up-and-down λ pattern as the real data, showing the pattern does not require loss aversion.*
 
 ## Evidence in Data from W&S
 
@@ -153,9 +157,11 @@ where C(Subsets) is a vector of dummies identifying the subset of lotteries unde
 
 Figure 3 presents the estimates of *λ* for the four subsets of lotteries. We find similar estimates of *λ* for lotteries with small gains and small losses, and for lotteries with large gains and large losses. We find a higher estimate of *λ* when gains are large and losses are small, and a directionally lower estimate of *λ* when gains are small and losses are large.
 
-| <img src="media/image3.png" style="width:5.97716in;height:5.98958in" /> |
-|----|
-| Figure 3. Estimates of *λ* for four subsets of lotteries presented in the 20G-20L condition and the 40G-40L condition of Experiments 1a and 1b. Error bars are bootstrapped 95% confidence intervals (hence the asymmetry). |
+![Figure 3. Estimates of λ for four lottery subsets within the 20G-20L and 40G-40L conditions.](https://quentinandre.net/publications/reanalysis-ws/media/image3.png)
+
+Figure 3. Estimates of *λ* for four subsets of lotteries presented in the 20G-20L condition and the 40G-40L condition of Experiments 1a and 1b. Error bars are bootstrapped 95% confidence intervals (hence the asymmetry).
+
+*Figure 3 (visual description): Two stacked panels, "20G-20L" (top) and "40G-40L" (bottom), each with λ on the y-axis (~−1 to 3) and a reference line at 1. Within each panel λ is estimated separately for four lottery subsets on the x-axis: Small G/Small L, Small G/Large L, Large G/Small L, Large G/Large L (points with 95% CIs). Although the experimental condition is held fixed within a panel, λ varies across subsets — notably higher for "Large G/Small L" (≈1.8 top, ≈1.3 bottom) and lower for "Small G/Large L" (≈0.5) — demonstrating that the λ estimate depends on which lotteries are measured (a measurement-invariance violation).*
 
 # *λ* IS THE SAME WHEN ANALYZING COMMON LOTTERIES
 
@@ -169,9 +175,11 @@ where C(Condition) is a vector of dummies identifying the experimental condition
 
 Figure 4 compares the original *λ* estimates to the ones obtained for the 9 common lotteries, and for the 9 random lotteries. When considering the subset of lotteries that are common across conditions, we do not find evidence for decision by sampling: Estimates of *λ* are not statistically different from each other, and the confidence intervals of our estimates (while wide) do not contain the original estimates of *λ* reported in W&S (conditions 20G-40L and 40G-20L). Finally, for the 9 lotteries that were selected at random for each participant, estimates of *λ* were consistent with those reported in W&S. This suggests that the non-significant differences in *λ* for the common lotteries cannot be attributed to a drop in statistical power alone.
 
-| <img src="media/image4.png" style="width:5.92582in;height:7.49298in" /> |
-|----|
-| Figure 4. Estimates of *λ* for all lotteries (circles), random subsets of 9 lotteries (squares), and common lotteries (diamonds). Error bars are bootstrapped 95% confidence intervals (hence the asymmetry). |
+![Figure 4. Estimates of λ for all lotteries, random subsets, and common lotteries.](https://quentinandre.net/publications/reanalysis-ws/media/image4.png)
+
+Figure 4. Estimates of *λ* for all lotteries (circles), random subsets of 9 lotteries (squares), and common lotteries (diamonds). Error bars are bootstrapped 95% confidence intervals (hence the asymmetry).
+
+*Figure 4 (visual description): Three stacked panels — "Experiments 1a + 1b", "Experiment 1a", "Experiment 1b" — each with λ on the y-axis (~0.6–2.6), a reference line at 1, and the four conditions (20G-20L, 20G-40L, 40G-20L, 40G-40L) on the x-axis. Three series per panel: All Lotteries (blue circles), Random Subset of 9 (orange squares), and Common Lotteries (green diamonds). All-Lotteries and Random-Subset reproduce the shifting pattern (λ spikes to ≈1.8 in 40G-20L and dips in 20G-40L), but Common Lotteries stays flat near λ = 1 across all conditions — restricting to the lotteries common to every condition eliminates the apparent shifts in loss aversion.*
 
 # GENERAL DISCUSSION
 
@@ -431,9 +439,11 @@ Decision by sampling theory predicts that *λ* will be larger in the 40G-20L tha
 
 Table 4. Comparison of *λ* when computed on all lotteries, common lotteries, and random subsets of lotteries in Experiment 3.
 
-| <img src="media/image5.png" style="width:6.375in;height:4.99608in" /> |
-|----|
-| Figure 5. Estimates of *λ* obtained on all lotteries (circles), a subset of 36 lotteries chosen at random for each participant (squares), and the subset of 36 common lotteries (diamonds). |
+![Figure 5. Estimates of λ for all lotteries, a random 36-lottery subset, and the common 36 lotteries.](https://quentinandre.net/publications/reanalysis-ws/media/image5.png)
+
+Figure 5. Estimates of *λ* obtained on all lotteries (circles), a subset of 36 lotteries chosen at random for each participant (squares), and the subset of 36 common lotteries (diamonds).
+
+*Figure 5 (visual description): Point-range plot (a separate dataset of 36 lotteries). λ on the y-axis (~0.5–3.0) with a reference line at 1; the x-axis lists three conditions ordered 20G-40L, 40G-40L, 40G-20L. Three series: All Lotteries (blue circles), Random Subset (orange squares), Common Lotteries (green diamonds), with 95% CIs. All-Lotteries and Random-Subset rise steeply from ≈0.7 (20G-40L) to ≈1.85–2.25 (40G-20L), whereas Common Lotteries stays comparatively flat (≈0.9 to ≈1.1–1.3) — again, the apparent variation in loss aversion disappears once only common lotteries are analyzed.*
 
 # REFERENCES
 

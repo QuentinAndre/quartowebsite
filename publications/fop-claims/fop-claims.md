@@ -531,7 +531,11 @@ These coefficients can be interpreted as follows: In the dieting goal condition,
 
 FIGURE 1
 
-THE PRESENCE-ABSENCE, NATURE-SCIENCE FRAMEWORK AND THE FOUR TYPES OF FOOD CLAIMS<img src="media/image1.png" style="width:5.64865in;height:4.16168in" />
+THE PRESENCE-ABSENCE, NATURE-SCIENCE FRAMEWORK AND THE FOUR TYPES OF FOOD CLAIMS
+
+![Figure 1. The presence–absence by nature–science framework and the four types of food claims.](https://quentinandre.net/publications/fop-claims/media/image1.png)
+
+*Figure 1 (visual description): A 2×2 conceptual map defined by two crossed axes — a vertical axis from "Science based" (bottom) to "Nature based" (top) and a horizontal axis from "Absence focus" (left) to "Presence focus" (right) — forming four quadrants, each a type of food claim: top-left "Not Adding Negatives" (nature/absence, green open circle), top-right "Not Removing Positives" (nature/presence, green filled circle), bottom-left "Removing Negatives" (science/absence, red open triangle), and bottom-right "Adding Positives" (science/presence, red filled triangle).*
 
 *  *
 
@@ -539,19 +543,25 @@ FIGURE 2
 
 STUDY 1: DENDROGRAM OF FOOD CLAIMS
 
-<img src="media/image2.png" style="width:9.01944in;height:4.91181in" alt="../../../../../Downloads/DendrogramFinal.png" />
+![Figure 2. Study 1 dendrogram of food claims.](https://quentinandre.net/publications/fop-claims/media/image2.png)
+
+*Figure 2 (visual description): A horizontal dendrogram (hierarchical clustering) of 37 food claims, claim labels down the left and a "Dissimilarity Measure" x-axis (~2 to >11). Each claim is tagged with a marker for its a priori type: ● Not Removing Positives, ▲ Adding Positives, ○ Not Adding Negatives, △ Removing Negatives. The claims form four color-coded clusters that closely match the four types: a presence/nature group (Organic, All natural, Pure, Unprocessed, Wholesome, Homemade, Fresh, Made with whole grains; ●); an "Adding Positives" group (High omega/minerals/protein/antioxidants/fiber/vitamins/calcium, Probiotics; ▲); a "Not Adding Negatives" group (No preservatives/additives/artificial-flavor/color/ingredients, No pesticides, GMO-free, No chemicals, No HFCS; ○); and a "Removing Negatives" group (Low fat/cholesterol/saturated-fat/calories/salt/sugar/carbohydrates, Light, No trans fat, Gluten-free; △). The two "negatives" clusters join each other and the two "positives" clusters join each other before the halves merge at the far right.*
 
 FIGURE 3
 
 STUDY 1: PERCEPTUAL MAP OF FOOD CLAIMS
 
-<img src="media/image3.png" style="width:6.5316in;height:5.57699in" />
+![Figure 3. Study 1 perceptual map of food claims.](https://quentinandre.net/publications/fop-claims/media/image3.png)
+
+*Figure 3 (visual description): A two-dimensional perceptual map of the claims on the nature–science (vertical) and absence–presence (horizontal) axes. Individual claims plot as points colored and shaped by type — green filled circles (Not Removing Positives: Organic, All natural, Pure, Unprocessed, Fresh, Wholesome, Homemade, Made with whole grains) in the upper-right; green open circles (Not Adding Negatives: No preservatives, No additives, No artificial flavor/color/ingredients, No pesticides, GMO-free, No chemicals, No HFCS) in the upper-left; red filled triangles (Adding Positives: High fiber/omega/antioxidants/protein/minerals/vitamins/calcium, Probiotics) in the lower-right; and red open triangles (Removing Negatives: Low fat/salt/sugar/calories/saturated-fat/cholesterol/carbohydrates, Light, No trans fat, Gluten-free) in the lower-left. A black "+" marks each category's centroid, confirming the four types occupy the four quadrants.*
 
 FIGURE 4
 
 STUDY 2: CLAIM TYPE AND NUTRITIONAL QUALITY OF BREAKFAST CEREALS
 
-<img src="media/image4.png" style="width:6.56181in;height:5.39253in" />
+![Figure 4. Study 2: claim type and nutritional quality of breakfast cereals.](https://quentinandre.net/publications/fop-claims/media/image4.png)
+
+*Figure 4 (visual description): A scatter plot positioning many breakfast-cereal claims on the same nature–science / absence–presence map, clustered into the four quadrant regions labeled "Not Adding", "Not Removing", "Removing", and "Adding". Each point is colored by the product's actual nutritional quality — the UK FSA "5C" score — on a continuous scale from green (−15, healthiest) through yellow (~2–10) to red (40, least healthy). The colors are intermixed within every quadrant rather than sorted by claim type, visually showing that claim type is uncorrelated with actual nutritional quality.*
 
 *Note:*
 
@@ -561,7 +571,9 @@ FIGURE 5
 
 STUDY 3: EFFECTS OF CLAIM TYPE ON FOOD INFERENCES
 
-<img src="media/image5.png" style="width:6.52329in;height:1.63579in" />
+![Figure 5. Study 3: effects of claim type on food inferences.](https://quentinandre.net/publications/fop-claims/media/image5.png)
+
+*Figure 5 (visual description): Three side-by-side line plots, one per inference: "This food is healthy", "This food is tasty", and "This food is good to lose weight or stay thin". Each plots a mean Likert rating (y-axis, 1–7) for Absence-focused versus Presence-focused claims, with two lines — Nature based (green) and Science based (red) — and error bars. Healthy: both lines rise from absence to presence and are similar (≈5.0–5.5), science slightly higher. Tasty: nature claims stay flat (≈4.35) while science claims rise from ≈3.7 (absence) to ≈4.15 (presence). Dieting: a crossover — science claims are rated high under absence focus (≈5.25) and drop under presence focus (≈4.45), whereas nature claims rise from ≈4.1 to ≈4.45.*
 
 FIGURE 6
 
@@ -593,14 +605,20 @@ STUDY 4: EXAMPLE OF STIMULI FOR CEREALS (TOP) AND MILK (BOTTOM)
 </tbody>
 </table>
 
-<img src="media/image6.jpeg" style="width:6.53333in;height:1.74306in" /><span class="smallcaps">  
-</span><img src="media/image7.png" style="width:6.53333in;height:2.70486in" />
+![Figure 6 (top). Five example cereal-box stimuli, each carrying a different front-of-package claim.](https://quentinandre.net/publications/fop-claims/media/image6.jpeg)
+
+<span class="smallcaps">  
+</span>![Figure 6 (bottom). Five example milk-carton stimuli, each carrying a different front-of-package claim.](https://quentinandre.net/publications/fop-claims/media/image7.png)
+
+*Figure 6 (visual description): Example Study 4 stimuli, with the product held constant while only the claim varies. Top row: five near-identical Corn Flakes cereal boxes (generic, Krasdale, Weis, Winn-Dixie, IGA), each bearing a different claim — "Made With Whole Grain", "High Fiber", "Low In Sugar", "No Artificial Flavors", and a no-claim control. Bottom row: five identical red-and-white MILK half-gallon cartons, each with a different claim — "All Natural", "High Vitamins", "Low Fat", "No Artificial Growth Hormone", and a no-claim control.*
 
 FIGURE 7
 
 STUDY 4: EFFECTS OF CLAIM PRESENCE, CLAIM TYPE, AND SHOPPING GOAL ON PURCHASE PROBABILITIES
 
-<img src="media/image8.png" style="width:7in;height:1.72047in" />
+![Figure 7. Study 4: effects of claim presence, claim type, and shopping goal on purchase probabilities.](https://quentinandre.net/publications/fop-claims/media/image8.png)
+
+*Figure 7 (visual description): Three side-by-side line plots by shopping goal — "Healthy Eating Goal", "Hedonic Eating Goal", and "Dieting Goal" — showing choice probability (y-axis, ~0–20%) for No claim (blue square), Nature based (green line), and Science based (red line) claims at Absence-focused versus Presence-focused positions. In every goal, any claim raises choice probability well above the no-claim baseline (~4–6%). Healthy goal: nature-based claims are chosen most (≈13–16%), above science-based (≈8–9%). Hedonic goal: nature and science claims are closer (≈8–13%). Dieting goal: a pronounced crossover — absence-focused science-based claims (e.g., "low fat") peak (≈19%), while presence-focused and nature-based claims are lower (≈8–11%).*
 
 <span class="smallcaps">APPENDIX A</span>
 
