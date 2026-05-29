@@ -90,9 +90,11 @@ Two-hundred sixty-six undergraduates at a European university participated in th
 
 Replicating previous results, we find that willingness to drive (in minutes) was lower in the uncertainty condition than in the certainty condition (medians 20 minutes vs. 30 minutes; U = 7727, *p* \< .001, CLES = .36).
 
-<img src="media/image1.png" style="width:5.15785in;height:5.04037in" />
+![Figure 1. Empirical cumulative distribution functions of utility by condition, Studies 1A–1C.](https://quentinandre.net/publications/probabilistic-outcomes/media/image1.png)
 
 Figure 1: Cumulative distributions of expected utilities in Studies 1A-1C, split by conditions.
+
+*Figure 1 (visual description): Three panels (Studies 1A, 1B, 1C), each plotting the empirical cumulative distribution of participants' utility for a gift card (x-axis: utility as % of maximum response, 0–1) against the cumulative proportion of participants (y-axis, 0–1), comparing two "Likelihood of Availability" conditions — 100% (certain) and 10% (uncertain). In all three studies the uncertain (10%) curve lies above and to the left of the certain (100%) curve, indicating systematically lower utility under uncertainty. Annotated statistics: Study 1A U = 841, p = .005, CLES = .34; Study 1B U = 3958, p = .002, CLES = .38; Study 1C U = 7727, p < .001, CLES = .36.*
 
 Altogether, Study 1A-1C provide evidence that people anticipate a lower utility from uncertain outcomes than from certain outcomes (see Figure 1). This effect is replicated with hypothetical and incentive-compatible choices, using different scenarios, and with different samples.
 
@@ -150,9 +152,11 @@ It is noteworthy that we observed a devaluation of the outcome even when the pro
 
 These results do not allow to conclude whether the level of uncertainty, beyond the provision of uncertainty, leads to stronger decline in valuation. While the means (M<sub>10%</sub> = 22.9, M<sub>50%</sub> = \$23.62, M<sub>90%</sub> = \$26.3) and medians (Median<sub>10%</sub> = \$22.5, Median<sub>50%</sub> = \$25, Median<sub>90%</sub> = \$25) of the uncertain conditions are directionally consistent with this hypothesis, pairwise comparisons between these conditions do not reach statistical significance (p-values of Mann-Whitney tests: .156 \< p \< .670).
 
-<img src="media/image2.png" style="width:6.26389in;height:3.98851in" />
+![Figure 2. Empirical cumulative distribution functions of willingness-to-pay by likelihood condition, Study 3.](https://quentinandre.net/publications/probabilistic-outcomes/media/image2.png)
 
 Figure 2: Cumulative distributions of WTP in Study 3, by condition
+
+*Figure 2 (visual description): Empirical cumulative distribution of participants' willingness-to-pay for a gift card (x-axis: $0–$50) against the cumulative proportion of participants (y-axis, 0–1), across four "Likelihood of Gift Card" conditions: 10%, 50%, 90%, and 100%. The 100% (certain) curve is shifted markedly to the right (higher WTP), while the three uncertain conditions cluster together at lower WTP. Annotated Mann-Whitney tests: 100% vs. 90% p = .002; 100% vs. 50% p < .001; 100% vs. 10% p < .001; 90% vs. 50% p = .228; 90% vs. 10% p = .156; 50% vs. 10% p = .670 — the certain condition differs from every uncertain condition, but the uncertain conditions do not differ from one another.*
 
 # STUDIES 4A-4B: UNCERTAINTY INFLUENCES LIKELIHOOD TO BUY AT A FIXED PRICE
 

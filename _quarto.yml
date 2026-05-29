@@ -11,6 +11,7 @@ project:
     - "publications/**/*.pdf"
     - "publications/**/*.html"
     - "publications/**/*.md"
+    - "publications/**/media/**"
     - "publications/**/featured.*"
     - "posts/**/files/**"
     - "posts/**/featured.*"
