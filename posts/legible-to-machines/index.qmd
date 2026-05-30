@@ -1,0 +1,54 @@
+---
+title: "Make Your Papers Legible to Machines (They're Already Reading)"
+author:
+- Quentin André
+date: '2026-05-30'
+date-modified: '2026-05-30'
+description: "The next reader of your paper is often a language model. Here's how I made my papers, data, and code legible to them — and why you should too."
+categories: [Tutorials]
+toc: false
+---
+
+Here's a quick experiment. Open your favorite chatbot and ask it to describe the key insights from one of your papers. Go ahead, I'll wait.
+
+If you're lucky, it mostly gets it right — particularly if the point you're asking about lives in the abstract. Abstracts are short, quotable, and scattered all over the web, so a model can usually hand one back to you. If you're unlucky, it does something more unsettling: it answers with total confidence and gets the mechanism backwards, credits you with a finding you never made, or quietly blends your paper together with three others that sound like it.
+
+Don't blame Claude, it is trying its best. The truth is that LLMs are answering questions with the information that is easily available to them... and paywalled PDFs don't fall into that category.
+
+If you've been reading my work, you probably know my opinion about LLMs: (i) They are here to stay, (ii) they are going to be a real part of how people read and do research, BUT (iii) the potential for misuse is high. So given these beliefs, I spent an afternoon making my papers legible to machines, and upload all my data, code and materials in a format that LLMs can digest and understand. Here's the how and why.
+
+## The text has to be readable
+
+PDFs are a nightmare for LLMs. PDFs are not text: at the computer level, a PDF is a set of instructions for where to put paint marks on a page — put this character at these coordinates, draw this line here — closer to a picture of a document than to the document itself. To read one, a machine has to reverse-engineer the words back out of that layout, and it does a poor job of it the moment there are two columns, ligatures, or a figure saved as an image. On the other hand, Markdown files are text: Everything within it is immediately readable by an LLM.
+
+The lowest hanging fruit is thus to add Markdown versions of your papers on your website. In addition, I also included an `llms.txt` file. That's a plain text index, sitting at the root of the site, that tells a model "here are my papers, here's a one-line description of each, and here's the clean text of each one." Think of it as `robots.txt`, but friendlier: instead of telling LLMs to go away, it tells them where to find what.
+
+## The data, code, and materials must be downloadable
+
+If you want people to easily ask deeper questions about your papers, you'll also want the data, code, and materials to be downloadable. This is where most of us already do something — and where most of us do it in a way machines hate. OSF or ResearchBox are wonderful for archiving a dataset and minting a DOI for it, but it's a poor fit here: the files usually arrive as a zip you have to download and unpack, the structure is hidden behind a web viewer, and an agent can't simply walk the folder and read one file at a time.
+
+A public GitHub repository fixes all of that. Every file has its own stable address, the raw text is one click (or one API call) away, and the whole thing is laid out like a directory an agent can browse. What goes in it? The data, with a codebook explaining every variable; the analysis code; the materials (surveys, stimuli, pre-registrations); and a README that says what lives where.
+
+To help LLMs navigate these files, I also wrote an `AGENTS.md` in each repository — a short note addressed to an AI agent, though honestly it works just as well for any human newcomer. It says: here is the folder layout, here is how to recreate the computing environment, here is how to run the analysis, and here are the gotchas (don't try to read the binary Word file directly; don't launch the ten-hour reproduction just to check one number). It's the orientation I would give a new research assistant, written down once.
+
+Finally, I put a clear license on each repository: MIT for the code, and CC-BY for the text, figures, and the data I collected. In plain terms, MIT says: do what you like with my code — run it, change it, build on it — just keep the copyright notice attached. CC-BY says: reuse the text, figures, and data however you want, as long as you credit me. This is important! When it comes to data online, the legal default is not "free to use" — it's the opposite. Without a license, material that looks open is, legally, look-but-don't-touch.
+
+## The citation has to be correct
+
+LLMs are SUPER PRONE to hallucinating Digital Online Identifiers (DOIs) for papers. If you know how LLMs work, it makes a lot of sense: A DOI is a long list of characters that (i) appears in a very specific context and (ii) that looks a lot like any other DOI. If you don't trust me, try it: Ask a model for the DOI of a paper, and you'll often get a clean, confident, official-looking identifier that points to... nothing (or worse, to another paper).
+
+The solution? Adding a `CITATION.cff` file to every paper's repository — a small structured file listing the title, authors, journal, year, and the *real* DOI. GitHub turns it into a "Cite this repository" button, and, more importantly, a model reading the repository is now handed the correct citation instead of guessing at one.
+
+## Why would I want to do that again?
+
+First, this format is going to help LLMs discover your research. The PhD student building a literature review, the reviewer getting up to speed on a less-familiar topic, or a non-academic curious about the latest discovery in a topic, are all likely to reach for an LLM at some point. If the text, data, and materials of your paper is available and indexed, LLMs can (i) find it and (ii) summarize it correctly, without making up facts or figures.
+
+The second aspect (and the one I find most exciting) is that it gives ANYONE the opportunity to engage with the research at a deeper level. If my data, code, and materials are easily accessible and discoverable by LLMs, someone who wants to build upon my work (or someone who wants to scrutinize it!) no longer has to email me and wait for the details to come it. Instead, they can point an agent at the repository and ask "does this result hold if you handle outliers differently?", "what happens under a different specification?", "what is the exact wording of the dependent measures in study 2?"... and get the answer in a few minutes. For someone like me who keeps telling everyone to share as much as possible about their work, this is just the logical next step.
+
+## OK, I'm in. What should I do?
+
+- Keep a markdown (or at least HTML) version of each manuscript somewhere public, and add an `llms.txt` index to your site.
+- Add a `CITATION.cff` with your real DOI to every repository. It takes five minutes. Do it now.
+- Put your data, code, and materials in a public GitHub repository (not just a zip on OSF), with a `README.md` explaining the layout and a codebook for every dataset.
+- Write a short `AGENTS.md` too, covering everything an agent will need to create the computing environment (if you don't know how to do that, ask your favorite LLM. It knows!)
+- Add a license saying what people can and cannot do with your data, and whether they need to ask your permission first.
